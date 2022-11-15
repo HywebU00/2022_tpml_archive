@@ -8409,7 +8409,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   padding: 0 100px;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .searchBlock .tabSet {
     padding: 0;
   }
@@ -8461,18 +8461,27 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
     margin-bottom: 10px;
   }
 }
+.searchBlock .formGrp:not(.formGrp_style1) .formTitle {
+  max-width: calc(16.6666666667% - 0.6em);
+  padding: 0.3em;
+}
+.searchBlock .formGrp:not(.formGrp_style1) .formTitle + .formContent {
+  -ms-flex-preferred-size: calc(100% - 150px);
+      flex-basis: calc(100% - 150px);
+  max-width: calc(100% - 150px);
+}
 .searchBlock .tabContent {
   padding: 30px 0 0 0;
 }
 .searchBlock .flexForm {
   margin: 0;
 }
-.searchBlock .flexForm input,
+.searchBlock .flexForm input[type=text],
 .searchBlock .flexForm select {
   height: 48px;
 }
 @media screen and (max-width: 767px) {
-  .searchBlock .flexForm input,
+  .searchBlock .flexForm input[type=text],
 .searchBlock .flexForm select {
     max-width: 100%;
     -ms-flex-preferred-size: 100%;

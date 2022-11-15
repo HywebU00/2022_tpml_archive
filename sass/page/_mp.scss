@@ -139,7 +139,7 @@ a.more {
     .tabSet {
         padding: 0 100px;
         margin: 0 auto;
-        @include screen('mobile') {
+        @media screen and (max-width: 1024px) {
             padding: 0;
         }
     }
@@ -176,13 +176,23 @@ a.more {
         @include screen('mobile') {
             margin-bottom: 10px;
         }
+        &:not(.formGrp_style1) {
+            .formTitle {
+                max-width: calc(16.6666666667% - 0.6em);
+                padding: .3em;
+                &+.formContent {
+                    flex-basis: calc(100% - 150px);
+                    max-width: calc(100% - 150px);
+                }
+            }
+        }
     }
     .tabContent {
         padding: 30px 0 0 0;
     }
     .flexForm {
         margin: 0;
-        input,
+        input[type='text'],
         select {
             height: 48px;
             @include screen('mobile') {

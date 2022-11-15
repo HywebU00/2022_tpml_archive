@@ -54,7 +54,12 @@ accordionSlider({
     //大圖輪播
     const sliderSwiper = new Swiper('.mpSlider .swiper', {
         slidesPerView: 1,
-        loop: false,
+        loop: true,
+        autoplay: {
+            delay: 8000, //輪播秒數
+            pauseOnMouseEnter: false, //滑鼠移至swiper上停止
+            disableOnInteraction: false, //移開後可以繼續autoPlay
+        },
         // 切換點
         pagination: {
             el: '.mpSlider .swiper-dots',
