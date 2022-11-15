@@ -8465,10 +8465,24 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   max-width: calc(16.6666666667% - 0.6em);
   padding: 0.3em;
 }
+@media screen and (max-width: 767px) {
+  .searchBlock .formGrp:not(.formGrp_style1) .formTitle {
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
 .searchBlock .formGrp:not(.formGrp_style1) .formTitle + .formContent {
   -ms-flex-preferred-size: calc(100% - 150px);
       flex-basis: calc(100% - 150px);
   max-width: calc(100% - 150px);
+}
+@media screen and (max-width: 767px) {
+  .searchBlock .formGrp:not(.formGrp_style1) .formTitle + .formContent {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 .searchBlock .tabContent {
   padding: 30px 0 0 0;

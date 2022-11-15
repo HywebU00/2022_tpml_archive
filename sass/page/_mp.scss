@@ -180,9 +180,17 @@ a.more {
             .formTitle {
                 max-width: calc(16.6666666667% - 0.6em);
                 padding: .3em;
+                @include screen('mobile') {
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
                 &+.formContent {
                     flex-basis: calc(100% - 150px);
                     max-width: calc(100% - 150px);
+                    @include screen('mobile') {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                    }
                 }
             }
         }
