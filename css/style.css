@@ -4470,6 +4470,11 @@ th {
     clear: both;
     text-align: left;
     font-size: 0.875rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F4EDE4), to(rgba(243, 239, 231, 0))), url(../images/footer_bg.png);
+    background-image: linear-gradient(180deg, #F4EDE4 0%, rgba(243, 239, 231, 0) 100%), url(../images/footer_bg.png);
+    background-size: cover;
+    background-position: left 0px bottom 40px;
+    background-repeat: no-repeat;
   }
   footer .container {
     padding: 30px 15px 10px;

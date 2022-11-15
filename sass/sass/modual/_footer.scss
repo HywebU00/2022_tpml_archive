@@ -2,6 +2,10 @@ footer {
     clear: both;
     text-align: left;
     font-size: 0.875rem;
+    background-image: linear-gradient(180deg, #F4EDE4 0%, rgba(243, 239, 231, 0) 100%), url(../images/footer_bg.png);
+    background-size: cover;
+    background-position: left 0px bottom 40px;
+    background-repeat: no-repeat;
     .container {
         padding: 30px 15px 10px;
         display: flex;
