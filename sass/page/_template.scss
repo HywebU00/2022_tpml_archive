@@ -55,7 +55,7 @@ body {
     }
     &:before {
         content: '';
-        background: url(../images/main_img01.jpg) no-repeat top center;
+        background: url(../images/main_img01.jpg) no-repeat center;
         background-size: cover;
         height: 536px;
         width: 100%;
@@ -78,18 +78,66 @@ body {
     }
 }
 
+.heading2_1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 1em -20px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    @include screen('mobile') {
+        margin-left: -10px;
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 5px;
+        background: $colorSecondary;
+        margin-right: 15px;
+        @include screen('mobile') {
+            width: 50px;
+        }
+    }
+}
+
+.heading2_2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 1em 0;
+    position: relative;
+    text-align: center;
+    &:after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 5px;
+        background: $colorSecondary;
+        margin: 10px auto;
+        @include screen('mobile') {
+            width: 50px;
+        }
+    }
+}
+
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerPage ClassName
 .innerPage {
+    &.main {
+        padding-top: 260px;
+        &:before {
+            content: '';
+            height: 260px;
+            width: 100%;
+        }
+    }
     &>.container {
         padding-top: 1em;
         @include gutter(); //gutter 代表左右要留白
         display: flex;
     }
-    .centerBlock {
-        flex: none;
-        flex-basis: 100%;
-        max-width: 100%;
+    .heading2_1 {
+        margin: 1rem 0;
     }
     .leftBlock {
         flex: none;
@@ -119,6 +167,15 @@ body {
                 max-width: 100%;
             }
         }
+    }
+    .centerBlock {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .functionPanel {
+        float: right;
+        margin: 1rem 0;
     }
 }
 

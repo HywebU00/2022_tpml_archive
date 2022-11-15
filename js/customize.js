@@ -74,6 +74,36 @@ accordionSlider({
         },
     });
 
+    //分類瀏覽輪播
+    const npSwiper = new Swiper('.npSlider .swiper', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: false,
+        // 切換點
+        pagination: {
+            el: '.adSlider .swiper-dots',
+            bulletElement: 'button',
+            clickable: true,
+        },
+        // 切換箭頭
+        navigation: {
+            nextEl: '.npSlider .swiperArrow.next', //自行設定樣式
+            prevEl: '.npSlider .swiperArrow.prev', //自行設定樣式
+            disabledClass: '.npSlider swiperArrow-disabled', //不可點選樣式
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+            1000: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
     //廣告輪播
     const adSwiper = new Swiper('.adSlider .swiper', {
         slidesPerView: 5,

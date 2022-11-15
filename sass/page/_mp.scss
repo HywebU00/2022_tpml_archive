@@ -27,49 +27,6 @@ a.more {
     }
 }
 
-.heading2_1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0 0 1em 0;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    margin-left: -20px;
-    @include screen('mobile') {
-        margin-left: -10px;
-    }
-    &:before {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 5px;
-        background: $colorSecondary;
-        margin-right: 15px;
-        @include screen('mobile') {
-            width: 50px;
-        }
-    }
-}
-
-.heading2_2 {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0 0 1em 0;
-    position: relative;
-    text-align: center;
-    &:after {
-        content: "";
-        display: block;
-        width: 150px;
-        height: 5px;
-        background: $colorSecondary;
-        margin: 10px auto;
-        @include screen('mobile') {
-            width: 50px;
-        }
-    }
-}
-
 // 廣告輪播
 // .adSlider {
 //   @include gutter(70px);
