@@ -91,6 +91,7 @@ a.more {
         margin-left: -50px;
         @include screen('mobile') {
             margin: 0 0 .5em -25px;
+            width: 100%;
         }
     }
     .tabSet {
@@ -214,8 +215,12 @@ a.more {
                     background: linear-gradient(180deg, #714E39 31.25%, #582F32 100%);
                     color: #fff;
                     transition: .2s;
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         background: linear-gradient(180deg, #582F32 31.25%, #582F32 100%);
+                    }
+                    &:focus {
+                        outline: 2px solid $colorSecondary;
                     }
                 }
             }
@@ -434,7 +439,7 @@ a.more {
         }
     }
     .heading2_1 {
-        margin-bottom: .5em;
+        margin-bottom: 1em;
     }
 }
 
@@ -591,6 +596,9 @@ a.more {
                 &:hover {
                     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
                     transform: translateY(-3px);
+                }
+                &:focus {
+                    outline: 2px solid $colorSecondary;
                 }
             }
         }

@@ -31,7 +31,6 @@ body {
     margin: 0px auto;
     background: #F0F0F0;
     @include screen('mobile') {
-        background: #fff;
         overflow: hidden;
         overflow-y: auto;
     }
@@ -123,6 +122,7 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerPage ClassName
 .innerPage {
+    background: #fff;
     &.main {
         padding-top: 260px;
         &:before {
@@ -137,7 +137,10 @@ body {
         display: flex;
     }
     .heading2_1 {
-        margin: 1rem 0;
+        margin: 1em 0;
+        @include screen('mobile') {
+            margin: .5em 0;
+        }
     }
     .leftBlock {
         flex: none;
@@ -175,7 +178,11 @@ body {
     }
     .functionPanel {
         float: right;
-        margin: 1rem 0;
+        margin: 1.6em 0;
+        @include screen('mobile') {
+            float: none;
+            margin: 0;
+        }
     }
 }
 

@@ -19,6 +19,7 @@ $colorDark: #333333;
 $colorHr: #666; //hr顏色
 $colorWord: #222; //一般字的顏色
 $colorWordLight: #666;
+$colorBg: #f0f0f0;
 $btnWordColor: #222; //按鈕字的顏色
 // 連結顏色
 $aColor: $colorImportant;
@@ -32,6 +33,9 @@ $btn-border: mix($btnWordColor, #000, 10%);
 $btnPadding: 0.5em 1.25em;
 $btnRadius: 0.2em;
 $btnBg: #e0e0e0;
+//------------------------------------------------------圖片--------//
+//可設定 cover 或是 contain
+$objFit: cover;
 //------------------------------------------------------字型--------//
 // 字型設定
 $fontFamily: Lato,

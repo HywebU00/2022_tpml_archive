@@ -25,8 +25,8 @@
                 color: #fff;
             }
             &:focus-visible {
-                outline: none;
-                box-shadow: 0 0px 0px 2px $aFocus inset;
+                outline: 2px $aFocus solid;
+                //box-shadow: 0 0px 0px 2px $aFocus inset;
                 @include screen('mobile') {
                     box-shadow: none;
                 }
