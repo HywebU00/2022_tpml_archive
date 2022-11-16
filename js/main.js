@@ -1511,18 +1511,26 @@ function accordionSlider(obj) {
         }
       });
 
-      i.addEventListener('click', (e) => {
-        //取消Ａ連結預設行為
-        e.preventDefault();
-        accordionList.forEach((s) => {
-          s.parentNode.classList.remove('active');
-          s.nextElementSibling.style.height = `0px`;
-          s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
-        });
-        i.nextElementSibling.style.height = `${contentHeight}px`;
-        i.parentNode.classList.add('active');
-        i.querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
-      });
+      i.addEventListener(
+        'click',
+        (e) => {
+          //取消Ａ連結預設行為
+          e.preventDefault();
+          accordionList.forEach((s) => {
+            s.parentNode.classList.remove('active');
+            s.nextElementSibling.style.height = `0px`;
+            s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+          });
+          if (i.nextElementSibling.offsetHeight < contentHeight) {
+            i.nextElementSibling.style.height = `${contentHeight}px`;
+            i.parentNode.classList.add('active');
+            i.querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
+          } else {
+            i.nextElementSibling.style.height = `0px`;
+          }
+        },
+        false
+      );
     });
   }
 
@@ -1539,3 +1547,40 @@ function accordionSlider(obj) {
   });
   window.addEventListener('load', checkContentHeight);
 }
+
+// -----------------------------------------------------------------------
+// -----   swiper 箭頭設定   ------------------------------------------------
+// -----------------------------------------------------------------------
+function swiperArrows(obj) {
+  let nextClass = document.querySelectorAll(obj.next);
+  let prevClass = document.querySelectorAll(obj.prev);
+  let documentHtml = document.querySelector('html');
+  if (documentHtml.getAttribute('lang')) {
+    let webLang = documentHtml.getAttribute('lang');
+    obj.data.forEach((s) => {
+      if (webLang.slice(0, 2) == s.lang) {
+        nextClass.forEach((v) => v.setAttribute('title', s.nextText));
+        prevClass.forEach((v) => v.setAttribute('title', s.prevText));
+      } else {
+        nextClass.forEach((v) => v.setAttribute('title', obj.default.nextText));
+        prevClass.forEach((v) => v.setAttribute('title', obj.default.prevText));
+      }
+    });
+  }
+}
+swiperArrows({
+  next: '.nextSlider',
+  prev: '.prevSlider',
+  data: [
+    //增加語系請寫在這邊
+    {
+      lang: 'zh',
+      nextText: '下一筆',
+      prevText: '上一筆',
+    },
+  ],
+  default: {
+    nextText: 'next',
+    prevText: 'previous',
+  },
+});
