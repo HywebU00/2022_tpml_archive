@@ -134,7 +134,9 @@ body {
     &>.container {
         padding-top: 1em;
         @include gutter(); //gutter 代表左右要留白
-        display: flex;
+        &.twoCol {
+            display: flex;
+        }
     }
     .heading2_1 {
         margin: 1em 0;

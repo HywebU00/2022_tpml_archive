@@ -7158,7 +7158,7 @@ div.function ul li a:focus-visible {
   }
   .functionPanel .share a.shareButton {
     display: block;
-    background: #fff;
+    background: #f0f0f0;
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -8143,6 +8143,8 @@ li:first-line {
     padding-right: 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .innerPage > .container.twoCol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8530,8 +8532,8 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   background: rgb(255, 255, 255);
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.5019607843) 0%, rgba(248, 248, 248, 0.8) 32%, rgba(245, 245, 245, 0.11) 100%);
   border: 1px solid #FFFFFF;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(0, 0, 0, 0.07);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 2px 4px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 2px 4px rgba(0, 0, 0, 0.07);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
   border-radius: 6px;
@@ -8640,6 +8642,9 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 .searchBlock .flexForm input[type=text],
 .searchBlock .flexForm select {
   height: 48px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 2px 4px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 2px 4px rgba(0, 0, 0, 0.07);
+  border: none;
 }
 @media screen and (max-width: 767px) {
   .searchBlock .flexForm input[type=text],
@@ -8808,6 +8813,8 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   border: none;
   padding: 0.5em 1.2em;
   background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media screen and (max-width: 767px) {
   .formGrp.formGrp_style1 input[type=text] {
