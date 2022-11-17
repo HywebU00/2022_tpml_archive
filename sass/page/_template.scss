@@ -124,7 +124,7 @@ body {
 .innerPage {
     background: #fff;
     &.main {
-        padding-top: 260px;
+        padding: 260px 0 20px;
         &:before {
             content: '';
             height: 260px;
@@ -185,6 +185,15 @@ body {
             float: none;
             margin: 0;
         }
+    }
+}
+
+//相簿模式
+.lpAlbum {
+    display: flex;
+    flex-wrap: wrap;
+    .thumbnail {
+        flex-basis: 25%;
     }
 }
 

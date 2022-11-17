@@ -1760,7 +1760,7 @@ th {
     font-size: 1em;
     font-weight: normal;
     color: #222;
-    line-height: 1.45em;
+    line-height: 1.5em;
     font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, Arial, sans-serif;
     -webkit-text-size-adjust: none;
     letter-spacing: 0.03em;
@@ -7515,6 +7515,12 @@ div.function ul li a:focus-visible {
     background: url(../images/basic/icon_error.svg) no-repeat center center;
     background-size: 15px;
   }
+  .accordion.active .accordionArrow::after,
+.accordion .active .accordionArrow::after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: 10px;
+  }
   .accordion ul {
     list-style: none;
     padding: 0;
@@ -7524,10 +7530,7 @@ div.function ul li a:focus-visible {
   }
   .accordion ul li .accordionList {
     display: block;
-    background-color: #21baff;
-    color: #fff;
     text-decoration: none;
-    padding: 5px;
     position: relative;
   }
   .accordion .accordionContent {
@@ -7544,16 +7547,16 @@ div.function ul li a:focus-visible {
   }
   .accordion .accordionArrow {
     position: absolute;
-    right: 40px;
+    right: 0;
   }
   .accordion .accordionArrow:after {
     content: "";
-    border: 2px solid #fff;
+    border: 2px solid #582F32;
     border-top: none;
     border-left: none;
     position: absolute;
-    top: 7px;
-    right: -20px;
+    top: 5px;
+    right: 5px;
     width: 8px;
     height: 8px;
     -webkit-transform: rotate(45deg);
@@ -7563,10 +7566,53 @@ div.function ul li a:focus-visible {
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
   }
-  .accordion .accordionArrow.open:after {
-    top: 8px;
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg);
+  .accordion1 {
+    padding: 1em;
+  }
+  .accordion1 .accordionList {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  .accordion1 .accordionList .accordionBtn {
+    font-size: 0;
+  }
+  .accordion1 .accordionContent {
+    padding-left: 0.5em;
+  }
+  .accordion1 .accordionContent ul {
+    padding: 0.5em 0;
+  }
+  .accordion1 .accordionContent li {
+    margin-bottom: 0.5em;
+  }
+  .accordion1 .accordionContent li a {
+    display: inline-block;
+    color: #222;
+    padding: 0.25em 0.5em;
+  }
+  .accordion1 .accordionContent li a:hover {
+    color: #4f2a2d;
+  }
+  .accordion1 .accordionContent .moreLessBtn {
+    margin: 0 0 1em 0;
+  }
+  .accordion2 .accordionList {
+    display: block;
+    float: right;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .accordion2 .accordionBtn {
+    padding-right: 25px;
+  }
+  .accordion2 .accordionArrow:after {
+    right: 5px;
+  }
+  .accordion2 .accordionContent {
+    clear: both;
   }
   .navTab .nav {
     display: -webkit-box;
@@ -7865,137 +7911,25 @@ li:first-line {
       width: 100%;
     }
   }
-  .leftBlock .banner {
-    padding: 0 0 2.5em 0;
-  }
-  .leftBlock .banner .item {
-    color: #666;
-    text-align: center;
-    font-weight: bold;
-    background-color: #eee;
-    margin-bottom: 10px;
-  }
-  .leftBlock .banner .item a {
-    width: 100%;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 3;
-    position: relative;
-  }
-  .leftBlock .banner .item a img {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-  }
-  .leftBlock .banner .item a:focus-visible:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-box-shadow: 0px 0px 0px 2px #825a42 inset;
-            box-shadow: 0px 0px 0px 2px #825a42 inset;
-    content: "";
-    z-index: 9;
-    top: 0;
-    left: 0;
-  }
-  .leftBlock .banner .item a img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .leftBlock .listBlock {
-    padding: 0 0 0.5em 0;
     margin-bottom: 1.5em;
-    background-color: #fff;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: rgba(248, 239, 229, 0.5);
+    border-radius: 6px;
   }
   .leftBlock .listBlock .title {
-    margin: 0 0 1em;
-    padding: 0.5em;
+    padding: 1em 0.5em;
     text-align: center;
-    color: #fff;
-    background-color: #666;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bolder;
+    background-color: #F8EFE5;
   }
-  .leftBlock .listBlock ul {
-    margin: 0;
-    padding: 0 1em;
-    list-style-type: none;
+  .leftBlock .listBlock li a:hover {
+    font-weight: bold;
   }
-  .leftBlock .listBlock ul li {
-    margin: 0 0 0.5em;
-    padding: 0 0 0.5em;
-    border-bottom: 1px solid #ccc;
-  }
-  .leftBlock .listBlock ul li time {
+  .leftBlock .listBlock li a .amount {
     display: inline-block;
-    vertical-align: middle;
-    font-size: 0.813rem;
-  }
-  .leftBlock .listBlock ul li .dept {
-    display: inline-block;
-    padding: 0 0.5em;
-    background-color: #f1f1f1;
-    color: #555;
-    font-size: 0.813em;
-  }
-  .leftBlock .listBlock ul li a {
-    display: block;
-    padding: 0 0 0.25em;
-    line-height: 1.4em;
-    font-size: 0.938em;
-    color: #333;
-    margin: 0.5em 0;
-  }
-  .leftBlock .listBlock ul li a:hover {
-    color: #4f2a2d;
-  }
-  .leftBlock .nodeMenu {
-    padding: 0 0 0.5em 0;
-    margin-bottom: 1.5em;
-    background-color: #fff;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  .leftBlock .nodeMenu .title {
-    margin: 0 0 1em;
-    padding: 0.5em;
-    text-align: center;
-    color: #fff;
-    background-color: #666;
-    font-size: 1.25em;
-    font-weight: bolder;
-  }
-  .leftBlock .nodeMenu ul {
-    margin: 0;
-    padding: 0 1em 0em;
-    list-style-type: none;
-  }
-  .leftBlock .nodeMenu ul li {
-    font-size: 0.938rem;
-    margin: 0 0 5px;
-    padding: 0 0 5px;
-    border-bottom: 1px solid #ccc;
-  }
-  .leftBlock .nodeMenu ul li:last-child {
-    border: none;
-  }
-  .leftBlock .nodeMenu ul li a {
-    display: block;
-    padding: 0.5em 0;
-    line-height: 1.4em;
-    color: #333;
-  }
-  .leftBlock .nodeMenu ul li a:hover {
-    color: #4f2a2d;
+    color: #714E39;
+    margin-left: 5px;
   }
   * {
     -webkit-box-sizing: border-box;
@@ -8128,7 +8062,7 @@ li:first-line {
     background: #fff;
   }
   .innerPage.main {
-    padding-top: 260px;
+    padding: 260px 0 20px;
   }
   .innerPage.main:before {
     content: "";
@@ -8216,6 +8150,17 @@ li:first-line {
       float: none;
       margin: 0;
     }
+  }
+  .lpAlbum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .lpAlbum .thumbnail {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
   }
   .hidden {
     display: none;
@@ -8694,7 +8639,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 @media screen and (max-width: 767px) {
   .searchBlock .keywordHot {
@@ -8743,9 +8688,15 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 .searchBlock .keywordHot ul li a:focus {
   outline: 2px solid #FCA24F;
 }
+.searchBlock .searchCaption {
+  color: #714E39;
+  padding: 1em 0;
+  margin: 1em 0 0 0;
+  border-top: 1px solid #666;
+}
 .searchBlock .btnSubmit {
   min-width: 300px;
-  margin: 2em auto 0.5em;
+  margin: 1em auto 0.5em;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #F8EFE5), to(#EFE2D4));
   background: linear-gradient(180deg, #F8EFE5 11.98%, #EFE2D4 100%);
   color: #333333;
@@ -8841,6 +8792,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   }
 }
 .mpSlider .sliderBlock {
+  padding: 0 4px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

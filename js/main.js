@@ -1522,17 +1522,19 @@ function accordionSlider(obj) {
                 (e) => {
                     //取消Ａ連結預設行為
                     e.preventDefault();
-                    accordionList.forEach((s) => {
-                        s.parentNode.classList.remove('active');
-                        s.nextElementSibling.style.height = `0px`;
-                        s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
-                    });
+                    // accordionList.forEach((s) => {
+                    //     s.parentNode.classList.remove('active');
+                    //     s.nextElementSibling.style.height = `0px`;
+                    //     s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+                    // });
                     if (i.nextElementSibling.offsetHeight < contentHeight) {
                         i.nextElementSibling.style.height = `${contentHeight}px`;
                         i.parentNode.classList.add('active');
                         i.querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
                     } else {
                         i.nextElementSibling.style.height = `0px`;
+                        i.parentNode.classList.remove('active');
+                        i.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
                     }
                 },
                 false

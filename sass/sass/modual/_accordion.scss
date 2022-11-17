@@ -1,52 +1,109 @@
 .accordion {
-  ul {
-    list-style: none;
-    padding: 0;
-    li {
-      margin-bottom: 0.5em;
-      .accordionList {
-        display: block;
-        background-color: #21baff;
-        color: #fff;
-        text-decoration: none;
-        padding: 5px;
-        position: relative;
-      }
+    &.active,
+    .active {
+        .accordionArrow {
+            &::after {
+                transform: rotate(-135deg);
+                top: 10px;
+            }
+        }
     }
-  }
-  .accordionContent {
-    line-height: 1.45em;
-    transition: height 0.3s linear;
-    overflow: hidden;
-    .content {
-      padding: 10px;
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            margin-bottom: 0.5em;
+            .accordionList {
+                display: block;
+                text-decoration: none;
+                //padding: 5px;
+                position: relative;
+            }
+        }
     }
-  }
-  .accordionBtn {
-    margin-left: 10px;
-  }
-  .accordionArrow {
-    position: absolute;
-    right: 40px;
-    &:after {
-      content: '';
-      border: 2px solid #fff;
-      border-top: none;
-      border-left: none;
-      position: absolute;
-      top: 7px;
-      right: -20px;
-      width: 8px;
-      height: 8px;
-      transform: rotate(45deg);
-      transition: transform 0.5s;
+    .accordionContent {
+        line-height: 1.45em;
+        transition: height 0.3s linear;
+        overflow: hidden;
+        .content {
+            padding: 10px;
+        }
     }
-    &.open {
-      &:after {
-        top: 8px;
-        transform: rotate(225deg);
-      }
+    .accordionBtn {
+        margin-left: 10px;
     }
-  }
+    .accordionArrow {
+        position: absolute;
+        right: 0;
+        &:after {
+            content: '';
+            border: 2px solid $aColor;
+            border-top: none;
+            border-left: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            transition: transform 0.5s;
+        }
+    }
 }
-//
+
+//檢索後分類
+.accordion1 {
+    padding: 1em;
+    .accordionList {
+        border-bottom: 1px solid $colorGray;
+        padding-bottom: .5em;
+        margin-bottom: .5em;
+        font-weight: bold;
+        font-size: 1.125rem;
+        .accordionBtn {
+            font-size: 0;
+        }
+    }
+    .accordionContent {
+        padding-left: .5em;
+        ul {
+            padding: .5em 0;
+        }
+        li {
+            margin-bottom: .5em;
+            a {
+                display: inline-block;
+                color: $colorWord;
+                padding: .25em .5em;
+                &:hover {
+                    color: $aHover;
+                }
+            }
+        }
+        .moreLessBtn {
+            margin: 0 0 1em 0;
+        }
+    }
+}
+
+//進階查詢
+.accordion2 {
+    .accordionList {
+        display: block;
+        float: right;
+        margin-bottom: 5px;
+        position: relative;
+    }
+    .accordionBtn {
+        padding-right: 25px;
+    }
+    .accordionArrow {
+        &:after {
+            right: 5px;
+            //top: 5px;
+        }
+    }
+    .accordionContent {
+        clear: both;
+    }
+}

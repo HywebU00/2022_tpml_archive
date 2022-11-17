@@ -194,7 +194,7 @@ a.more {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
         @include screen('mobile') {
             flex-wrap: wrap;
             justify-content: flex-start;
@@ -228,9 +228,16 @@ a.more {
             }
         }
     }
+    //搜尋說明文字
+    .searchCaption {
+        color: $colorPrimary;
+        padding: 1em 0;
+        margin: 1em 0 0 0;
+        border-top: 1px solid $colorHr;
+    }
     .btnSubmit {
         min-width: 300px;
-        margin: 2em auto .5em;
+        margin: 1em auto .5em;
         background: linear-gradient(180deg, #F8EFE5 11.98%, #EFE2D4 100%);
         color: $colorDark;
         border: none;
@@ -300,6 +307,7 @@ a.more {
         padding: 0 15px 3em;
     }
     .sliderBlock {
+        padding: 0 4px;
         position: relative;
         display: flex;
         align-items: stretch;

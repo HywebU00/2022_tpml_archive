@@ -12,8 +12,8 @@ tableAddDataAttributes({
 
 // 手風琴功能
 accordionSlider({
-    accordionList: '.accordionList', // 問題區塊
-    accordionContent: '.accordionContent', // 回答區塊
+    accordionList: '.accordion1 .accordionList', // 問題區塊
+    accordionContent: '.accordion1 .accordionContent', // 回答區塊
     accordionInfo: {
         open: '展開', // 收合時顯示
         close: '收合', // 展開時顯示
