@@ -20,6 +20,16 @@ accordionSlider({
     },
 });
 
+// 手風琴功能 進階查詢開合
+accordionSlider({
+    accordionList: '.accordion2 .accordionList', // 問題區塊
+    accordionContent: '.accordion2 .accordionContent', // 回答區塊
+    accordionInfo: {
+        open: '進階查詢', // 收合時顯示
+        close: '簡易查詢', // 展開時顯示
+    },
+});
+
 // -----  基本功能開關   ---------------------------------------------------
 
 // 自行加入的JS請寫在這裡
