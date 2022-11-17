@@ -241,52 +241,182 @@
                                 </div>
                             </div>
                         </div>
-                        <p>查詢條件： 不限欄位＝旅遊 AND 查詢範圍=典藏品,美術類,器物類,文章類,圖書類,漫畫類,照片類 AND 查詢方式 = 精確查詢</p>
+                        <div class="searchCaption">查詢條件： 不限欄位＝旅遊 AND 查詢範圍=典藏品,美術類,器物類,文章類,圖書類,漫畫類,照片類 AND 查詢方式 = 精確查詢</div>
                         <button class="btn btnSubmit">送出</button>
                     </div>
                 </div>
+                <!-- Pagination -->
+                <div class="pagination">
+                    <form action="">
+                        <div class="formInline">
+                            <div class="total">
+                                共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示
+                                <select name="" id="" aria-label="每頁顯示">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                        <option value="">30</option>
+                        <option value="">40</option>
+                      </select> 筆， <input type="button" class="btn" value="確定" />
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="page">
+                        <li class="first">
+                            <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                            <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="next">
+                            <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                            <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="container twoCol">
-                <div class="leftBlock stickySidebar">
+                <div class="leftBlock">
                     <div class="listBlock">
                         <div class="title">檢索後分類</div>
-                        <ul>
-                            <li>
-                                <time>2020/01/01</time>
-                                <div class="dept">部門</div>
-                                <a href="#">連結文字樣式連結文字樣式連結文字樣式連結文字樣式</a>
-                            </li>
-                            <li>
-                                <time>2020/01/01</time>
-                                <div class="dept">部門</div>
-                                <a href="#">連結文字樣式連結文字樣式連結文字樣式連結文字樣式</a>
-                            </li>
-                            <li>
-                                <time>2020/01/01</time>
-                                <div class="dept">部門</div>
-                                <a href="#">連結文字樣式連結文字樣式連結文字樣式連結文字樣式</a>
-                            </li>
-                            <li>
-                                <time>2020/01/01</time>
-                                <div class="dept">部門</div>
-                                <a href="#">連結文字樣式連結文字樣式連結文字樣式連結文字樣式</a>
-                            </li>
-                            <li>
-                                <time>2020/01/01</time>
-                                <div class="dept">部門</div>
-                                <a href="#">連結文字樣式連結文字樣式連結文字樣式連結文字樣式</a>
-                            </li>
-                        </ul>
+                        <div class="accordion accordion1">
+                            <ul>
+                                <li>
+                                    <a class="accordionList" role="button" href="javascript:;" title="">資料類型</a>
+                                    <div class="accordionContent">
+                                        <ul>
+                                            <li><a href="#">典藏品<span class="amount">(91)</span></a></li>
+                                            <li><a href="#">美術類<span class="amount">(12)</span></a></li>
+                                            <li><a href="#">器物類<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">文章類<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">圖書類<span class="amount">(2)</span></a></li>
+                                            <li><a href="#">漫畫類<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">照片類<span class="amount">(3)</span></a></li>
+                                        </ul>
+                                        <button type="button" class="moreLessBtn" aria-label="顯示更多資料">more</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="accordionList" role="button" href="javascript:;" title="">依藏品類型</a>
+                                    <div class="accordionContent">
+                                        <ul>
+                                            <li><a href="#">無<span class="amount">(91)</span></a></li>
+                                            <li><a href="#">照片<span class="amount">(12)</span></a></li>
+                                            <li><a href="#">手稿<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">獎牌<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">文宣品<span class="amount">(2)</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="accordionList" role="button" href="javascript:;" title="">依出版者</a>
+                                    <div class="accordionContent">
+                                        <ul>
+                                            <li><a href="#">無<span class="amount">(91)</span></a></li>
+                                            <li><a href="#">照片<span class="amount">(12)</span></a></li>
+                                            <li><a href="#">手稿<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">獎牌<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">文宣品<span class="amount">(2)</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="accordionList" role="button" href="javascript:;" title="">依創作者姓名</a>
+                                    <div class="accordionContent">
+                                        <ul>
+                                            <li><a href="#">無<span class="amount">(91)</span></a></li>
+                                            <li><a href="#">照片<span class="amount">(12)</span></a></li>
+                                            <li><a href="#">手稿<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">獎牌<span class="amount">(3)</span></a></li>
+                                            <li><a href="#">文宣品<span class="amount">(2)</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">未分類<span class="amount">(10)</span></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <!-- 主要內容區 -->
                 <div class="centerBlock">
                     <!-- LP Start -->
-                    <section class="lp">
-
+                    <section class="lp lpAlbum">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgContainer">
+                                    <img src="https://source.unsplash.com/random/2" alt="圖說2" />
+                                </div>
+                                <div class="caption">
+                                    <span class="sort">典藏品</span>
+                                    <h3>主題名：2017台北國際書展大獎海報</h3>
+                                    <div class="detial">
+                                        <ul>
+                                            <li>創作者：陳柔安</li>
+                                            <li>創作日期：2016年</li>
+                                            <li>藏品類型：活動海報文宣品</li>
+                                            <li>內容主題：推廣活動</li>
+                                            <li>典藏單位：推廣課</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </section>
                     <!-- LP End -->
                 </div>
+            </div>
+            <!-- Pagination -->
+            <div class="pagination">
+                <form action="">
+                    <div class="formInline">
+                        <div class="total">
+                            共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示
+                            <select name="" id="" aria-label="每頁顯示">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                        <option value="">30</option>
+                        <option value="">40</option>
+                      </select> 筆， <input type="button" class="btn" value="確定" />
+                        </div>
+                    </div>
+                </form>
+                <ul class="page">
+                    <li class="first">
+                        <a href="#" title="第一頁">第一頁 </a>
+                    </li>
+                    <li class="prev">
+                        <a href="#" title="回上一頁">回上一頁 </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li class="next">
+                        <a href="#" title="下一頁">下一頁 </a>
+                    </li>
+                    <li class="last">
+                        <a href="#" title="最後一頁">最後一頁 </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
