@@ -2112,6 +2112,18 @@ th {
     border: none;
     background: transparent;
   }
+  .btnMoreLess {
+    border: none;
+    margin: 0 0 1em 0;
+    padding: 0.3em 1em;
+    font-size: 0.875em;
+    font-weight: bold;
+    background: #FCA24F;
+  }
+  .btnMoreLess:hover {
+    background: #4f2a2d;
+    color: #fff;
+  }
   .disabled,
 [disabled] {
     opacity: 0.5;
@@ -2488,6 +2500,12 @@ th {
   }
   .i_facebook_deep:before {
     background: url(../images/icon/icon_facebook_deep.svg) center center no-repeat;
+    background-size: contain;
+    margin-top: -0.1em;
+    margin-bottom: 0.1em;
+  }
+  .i_funnel_deep:before {
+    background: url(../images/icon/icon_funnel_deep.svg) center center no-repeat;
     background-size: contain;
     margin-top: -0.1em;
     margin-bottom: 0.1em;
@@ -7803,7 +7821,7 @@ li:first-line {
   }
   .leftBlock .listBlock {
     margin-bottom: 1.5em;
-    background: #fdfbf9;
+    background: #faf4ed;
   }
   .leftBlock .listBlock .title {
     padding: 0.8em 0.5em;
@@ -8101,7 +8119,7 @@ li:first-line {
     -ms-flex-preferred-size: calc(25% - 1em);
         flex-basis: calc(25% - 1em);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     .lpAlbum .thumbnail {
       -ms-flex-preferred-size: calc(33% - 1em);
           flex-basis: calc(33% - 1em);
@@ -8175,7 +8193,27 @@ li:first-line {
     }
   }
   .lpList .thumbnail .caption .detail li {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+  }
+  .btnFunnel {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: #ccc;
+  }
+  @media screen and (max-width: 767px) {
+    .btnFunnel {
+      display: block;
+    }
+  }
+  .btnFunnel i {
+    margin-right: 3px;
   }
   .hidden {
     display: none;

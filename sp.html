@@ -296,7 +296,9 @@
                         <option value="">創作者-升冪</option>
                         <option value="">創作者-降冪</option>
                       </select>
+                    <!-- 點擊後 lp addClass lpList，切換成條文式排列-->
                     <button type="button" aria-label="條文排列" class="btnListArray"><i class="i_list_deep"></i></button>
+                    <!-- 點擊後 lp addClass lpAlbum，切換成網格式（卡片）排列-->
                     <button type="button" aria-label="網格排列" class="btnGridArray"><i class="i_grid_deep"></i></button>
                 </div>
             </div>
@@ -306,7 +308,6 @@
                     <!-- 手機版時才出現的關閉後分類按鈕 -->
                     <button type="button" aria-label="關閉後分類檢索" class="btnClose"><i class="i_close_deep"></i></button>
                     <div class="listBlock">
-
                         <div class="title">檢索後分類</div>
                         <div class="accordion accordion1">
                             <ul>
@@ -322,7 +323,8 @@
                                             <li><a href="#">漫畫類<span class="amount">(3)</span></a></li>
                                             <li><a href="#">照片類<span class="amount">(3)</span></a></li>
                                         </ul>
-                                        <button type="button" class="moreLessBtn" aria-label="顯示更多資料">more</button>
+                                        <!-- 超過五個細項才出現的按鈕 點擊後顯示全部項目 文字切換less和more -->
+                                        <button type="button" class="btnMoreLess" aria-label="顯示更多資料">more</button>
                                     </div>
                                 </li>
                                 <li>
@@ -533,7 +535,7 @@
                             </a>
                         </div>
                     </section>
-                    <section class="lp lpList">
+                    <!-- <section class="lp lpList">
                         <div class="thumbnail">
                             <a href="#">
                                 <div class="imgContainer">
@@ -614,7 +616,7 @@
                                 </div>
                             </a>
                         </div>
-                    </section>
+                    </section> -->
                     <!-- LP End -->
                 </div>
             </div>
@@ -658,6 +660,8 @@
                     </li>
                 </ul>
             </div>
+            <!-- 手機版才出現的 開啟左側檢索後分類按鈕 -->
+            <button type="button" aria-label="開啟檢索後分類" class="btnFunnel"><i class="i_funnel_deep"></i>檢索後分類</button>
         </div>
     </div>
     <!-- footer Start-->

@@ -231,7 +231,7 @@ body {
     .thumbnail {
         margin: 0 .5em 1em;
         flex-basis: calc(25% - 1em);
-        @media screen and (min-width: 1200px) {
+        @media screen and (max-width: 1199px) {
             flex-basis: calc(33% - 1em);
         }
         @include screen('tablet') {
@@ -287,10 +287,29 @@ body {
             }
             .detail {
                 li {
-                    margin-bottom: 3px;
+                    margin-bottom: 5px;
                 }
             }
         }
+    }
+}
+
+.btnFunnel {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: $colorGray;
+    @include screen('mobile') {
+        display: block;
+    }
+    i {
+        margin-right: 3px;
     }
 }
 

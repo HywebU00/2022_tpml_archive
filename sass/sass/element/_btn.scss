@@ -155,6 +155,19 @@
     background: transparent;
 }
 
+.btnMoreLess {
+    border: none;
+    margin: 0 0 1em 0;
+    padding: .3em 1em;
+    font-size: .875em;
+    font-weight: bold;
+    background: $colorSecondary;
+    &:hover {
+        background: $aHover;
+        color: #fff;
+    }
+}
+
 .disabled,
 [disabled] {
     opacity: 0.5;
