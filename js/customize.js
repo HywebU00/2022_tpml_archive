@@ -10,7 +10,7 @@ tableAddDataAttributes({
     dataName: 'title', // tableList樣式 加上 data-title
 });
 
-// 手風琴功能
+// 手風琴功能 檢索後分類
 accordionSlider({
     accordionList: '.accordion1 .accordionList', // 問題區塊
     accordionContent: '.accordion1 .accordionContent', // 回答區塊
@@ -27,6 +27,16 @@ accordionSlider({
     accordionInfo: {
         open: '進階查詢', // 收合時顯示
         close: '簡易查詢', // 展開時顯示
+    },
+});
+
+//// 手風琴功能 常見問題
+accordionSlider({
+    accordionList: '.accordion3 .accordionList', // 問題區塊
+    accordionContent: '.accordion3 .accordionContent', // 回答區塊
+    accordionInfo: {
+        open: '展開', // 收合時顯示
+        close: '收合', // 展開時顯示
     },
 });
 
