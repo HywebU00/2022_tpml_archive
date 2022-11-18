@@ -242,7 +242,7 @@ function topNav() {
     const sideLanguage = document.querySelector('.mobileArea .fontSize');
     sideLanguage !== null ? sideLanguage.remove() : '';
 }
-// topNav();
+topNav();
 
 // -----------------------------------------------------------------------
 // ----- 手機版本search設定 ------------------------------------------------

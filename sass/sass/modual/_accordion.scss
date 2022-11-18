@@ -55,7 +55,7 @@
 .accordion1 {
     padding: 1em;
     .accordionList {
-        border-bottom: 1px solid $colorGray;
+        border-bottom: 1px solid #fff;
         padding-bottom: .5em;
         margin-bottom: .5em;
         font-weight: bold;
@@ -64,6 +64,15 @@
             font-size: 0;
         }
     }
+    // >ul {
+    //     >li {
+    //         &:first-of-type {
+    //             .accordionContent {
+    //                 height: auto !important;
+    //             }
+    //         }
+    //     }
+    // }
     .accordionContent {
         padding-left: .5em;
         ul {
@@ -71,6 +80,14 @@
         }
         li {
             margin-bottom: .5em;
+            display: none;
+            &:first-of-type,
+            &:nth-of-type(2),
+            &:nth-of-type(3),
+            &:nth-of-type(4),
+            &:nth-of-type(5) {
+                display: block;
+            }
             a {
                 display: inline-block;
                 color: $colorWord;
