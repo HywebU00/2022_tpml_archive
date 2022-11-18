@@ -11,6 +11,8 @@
     ul {
         list-style: none;
         padding: 0;
+        transition: all 0.3s linear;
+        overflow: hidden;
         li {
             margin-bottom: 0.5em;
             .accordionList {
@@ -56,8 +58,8 @@
     padding: 1em;
     .accordionList {
         border-bottom: 1px solid #fff;
-        padding-bottom: .5em;
-        margin-bottom: .5em;
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
         font-weight: bold;
         font-size: 1.125rem;
         .accordionBtn {
@@ -74,24 +76,24 @@
     //     }
     // }
     .accordionContent {
-        padding-left: .5em;
+        padding-left: 0.5em;
         ul {
-            padding: .5em 0;
+            padding: 0.5em 0;
         }
         li {
-            margin-bottom: .5em;
-            display: none;
-            &:first-of-type,
-            &:nth-of-type(2),
-            &:nth-of-type(3),
-            &:nth-of-type(4),
-            &:nth-of-type(5) {
-                display: block;
-            }
+            margin-bottom: 0.5em;
+            // display: none;
+            // &:first-of-type,
+            // &:nth-of-type(2),
+            // &:nth-of-type(3),
+            // &:nth-of-type(4),
+            // &:nth-of-type(5) {
+            //   display: block;
+            // }
             a {
                 display: inline-block;
                 color: $colorWord;
-                padding: .25em .5em;
+                padding: 0.25em 0.5em;
                 &:hover {
                     color: $aHover;
                 }
