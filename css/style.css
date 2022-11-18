@@ -7518,6 +7518,21 @@ div.function ul li a:focus-visible {
   .accordion2 .accordionContent {
     clear: both;
   }
+  .accordion3 ul li .accordionList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .accordion3 .accordionList .qBlock {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .accordion3 .accordionBtn {
+    margin-right: 25px;
+    background: #714E39;
+    padding: 0.2em 0.8em;
+  }
   .navTab .nav {
     display: -webkit-box;
     display: -ms-flexbox;

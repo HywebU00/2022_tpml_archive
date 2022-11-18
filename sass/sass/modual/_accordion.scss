@@ -124,3 +124,24 @@
         clear: both;
     }
 }
+
+//常見問題
+.accordion3 {
+    ul {
+        li {
+            .accordionList {
+                display: flex;
+            }
+        }
+    }
+    .accordionList {
+        .qBlock {
+            flex: 1 1 auto;
+        }
+    }
+    .accordionBtn {
+        margin-right: 25px;
+        background: $colorPrimary;
+        padding: .2em .8em;
+    }
+}
