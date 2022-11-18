@@ -152,6 +152,7 @@ body {
         margin-right: 40px;
         align-self: flex-start;
         position: relative;
+        transition: .3s;
         &.hidden {
             &+.centerBlock {
                 flex: none;
@@ -196,6 +197,9 @@ body {
                 flex: none;
                 flex-basis: 100%;
                 max-width: 100%;
+            }
+            &.active {
+                left: 0;
             }
         }
     }
