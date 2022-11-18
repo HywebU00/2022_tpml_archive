@@ -200,6 +200,10 @@ body {
             }
             &.active {
                 left: 0;
+                overflow: auto;
+                .btnClose {
+                    position: fixed;
+                }
             }
         }
     }

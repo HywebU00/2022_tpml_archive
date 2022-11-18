@@ -48,22 +48,24 @@ accordionSlider({
   let lpStyle = document.querySelector('.lp');
   let list = document.querySelector('.btnListArray');
   let grid = document.querySelector('.btnGridArray');
-  list.addEventListener(
-    'click',
-    function () {
-      lpStyle.classList.add('lpList');
-      lpStyle.classList.remove('lpAlbum');
-    },
-    false
-  );
-  grid.addEventListener(
-    'click',
-    function () {
-      lpStyle.classList.add('lpAlbum');
-      lpStyle.classList.remove('lpList');
-    },
-    false
-  );
+  if (list !== null || list !== null) {
+    list.addEventListener(
+      'click',
+      function () {
+        lpStyle.classList.add('lpList');
+        lpStyle.classList.remove('lpAlbum');
+      },
+      false
+    );
+    grid.addEventListener(
+      'click',
+      function () {
+        lpStyle.classList.add('lpAlbum');
+        lpStyle.classList.remove('lpList');
+      },
+      false
+    );
+  }
 })();
 
 //檢索後分類開關
@@ -71,20 +73,22 @@ accordionSlider({
   let bottomBtn = document.querySelector('.btnFunnel');
   let leftBlock = document.querySelector('.leftBlock');
   let close = document.querySelector('.i_close_deep');
-  bottomBtn.addEventListener(
-    'click',
-    function () {
-      leftBlock.classList.toggle('active');
-    },
-    false
-  );
-  close.addEventListener(
-    'click',
-    function () {
-      leftBlock.classList.toggle('active');
-    },
-    false
-  );
+  if (bottomBtn !== null) {
+    bottomBtn.addEventListener(
+      'click',
+      function () {
+        leftBlock.classList.toggle('active');
+      },
+      false
+    );
+    close.addEventListener(
+      'click',
+      function () {
+        leftBlock.classList.toggle('active');
+      },
+      false
+    );
+  }
 })();
 
 // accordion 客製功能
