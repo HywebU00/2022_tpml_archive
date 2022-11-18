@@ -191,7 +191,7 @@ body {
             width: 100%;
             max-width: 100%;
             height: 100%;
-            background: lighten($colorLight, 5);
+            background: lighten($colorLight, 2);
             &+.centerBlock {
                 flex: none;
                 flex-basis: 100%;
