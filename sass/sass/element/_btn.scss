@@ -168,6 +168,26 @@
     }
 }
 
+//檢索後分類 手機版開啟按鈕
+.btnFunnel {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: $colorGray;
+    @include screen('mobile') {
+        display: block;
+    }
+    i {
+        margin-right: 3px;
+    }
+}
+
 .disabled,
 [disabled] {
     opacity: 0.5;
