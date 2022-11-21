@@ -7421,17 +7421,17 @@ div.function ul li a:focus-visible {
             transform: rotate(-135deg);
     top: 10px;
   }
-  .accordion ul {
+  .accordion > ul {
     list-style: none;
     padding: 0;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     overflow: hidden;
   }
-  .accordion ul li {
+  .accordion > ul > li {
     margin-bottom: 0.5em;
   }
-  .accordion ul li .accordionList {
+  .accordion > ul > li .accordionList {
     display: block;
     text-decoration: none;
     position: relative;
@@ -7517,20 +7517,70 @@ div.function ul li a:focus-visible {
   .accordion2 .accordionContent {
     clear: both;
   }
-  .accordion3 ul li .accordionList {
+  .accordion3 {
+    margin: 2em 0;
+  }
+  .accordion3 > ul > li {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #F8EFE5;
+  }
+  .accordion3 > ul > li .accordionList {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .accordion3 > ul > li .accordionContent {
+    margin-left: 20px;
   }
   .accordion3 .accordionList .qBlock {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+    position: relative;
+    padding-left: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    .accordion3 .accordionList .qBlock {
+      padding-left: 0;
+    }
+  }
+  .accordion3 .accordionList .qBlock time {
+    color: #666;
+    font-size: 0.938em;
+    display: block;
+  }
+  .accordion3 .accordionList .qBlock .num {
+    display: inline-block;
+    width: 25px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: auto;
+  }
+  .accordion3 .accordionList .qBlock .num::after {
+    content: ".";
+  }
+  @media screen and (max-width: 767px) {
+    .accordion3 .accordionList .qBlock .num {
+      position: static;
+      text-align: left;
+      display: block;
+    }
   }
   .accordion3 .accordionBtn {
     margin-right: 25px;
     background: #714E39;
-    padding: 0.2em 0.8em;
+    padding: 0.1em 0.8em;
+    font-size: 0.875em;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   .navTab .nav {
     display: -webkit-box;
