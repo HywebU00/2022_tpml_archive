@@ -72,12 +72,14 @@ accordionSlider({
 (function () {
   let bottomBtn = document.querySelector('.btnFunnel');
   let leftBlock = document.querySelector('.leftBlock');
-  let close = document.querySelector('.i_close_deep');
+  let close = document.querySelector('.btnClose');
+  let body = document.querySelector('body');
   if (bottomBtn !== null) {
     bottomBtn.addEventListener(
       'click',
       function () {
         leftBlock.classList.toggle('active');
+        body.classList.toggle('fixed');
       },
       false
     );
@@ -85,6 +87,7 @@ accordionSlider({
       'click',
       function () {
         leftBlock.classList.toggle('active');
+        body.classList.toggle('fixed');
       },
       false
     );
