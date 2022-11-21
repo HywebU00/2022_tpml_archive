@@ -2,10 +2,6 @@
     --dotSize: 15px;
 }
 
-.cpSlider {
-    padding: 1em 0;
-}
-
 .swiperBox {
     position: relative;
     .swiper-dots {
@@ -68,10 +64,12 @@
         display: block;
         background: url('../images/basic/icon_arrow.svg') center no-repeat;
     }
-    &.prev {
+    &.prev,
+    &.prevSlider {
         left: 0px;
     }
-    &.next {
+    &.next,
+    &.nextSlider {
         right: 0px;
         &::before {
             transform: rotate(180deg);
@@ -82,58 +80,71 @@
     }
 }
 
-.cpSlider .swiper {
-    margin: 0 40px;
-    background: #fff;
-    overflow: hidden;
+.cpSlider {
+    padding-bottom: 60px;
     h3 {
         font-size: 1.5em;
         padding: 12px 0px 15px 0px;
         margin: 0.5em 0px 1.2em;
-        border-bottom: 1px solid $colorPrimary;
+        text-align: center;
     }
-    .cpSlider {
-        @include gutter;
-    }
-    .imgContainer {
-        @include aspectRatio(4,
-        3);
+    .swiper {
+        margin: 0 40px;
+        background: #fff;
         overflow: hidden;
-        img {
-            object-fit: contain;
-        }
-    }
-    .caption {
-        padding: 0.5em !important;
-        position: absolute;
-        background: rgba(0, 0, 0, 0.75) !important;
-        color: #fff;
-        bottom: -2em !important;
-        left: 0;
-        font-size: 0.938em !important;
-        height: 2em !important;
-        line-height: 1 !important;
-        width: 100%;
-        @include textOverflow;
-        transition: 0.3s ease-out;
-    }
-    a {
-        color: #555;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        &:hover,
-        &:focus-visible {
-            .caption {
-                bottom: 0 !important;
+        .imgContainer {
+            @include aspectRatio(1.1,
+            1);
+            overflow: hidden;
+            background: #333;
+            img {
+                object-fit: contain;
             }
         }
+        .sort {
+            @extend %sort;
+            position: absolute;
+            left: 10px;
+            top: 10px
+        }
+        .caption {
+            padding: 0.5em !important;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.75) !important;
+            color: #fff;
+            bottom: 0 !important;
+            left: 0;
+            font-size: 1rem !important;
+            height: 2em !important;
+            line-height: 1 !important;
+            width: 100%;
+            @include textOverflow;
+            transition: 0.3s ease-out;
+            backdrop-filter: blur(4.5px);
+        }
+        a {
+            color: #555;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            &:hover,
+            &:focus-visible {
+                .caption {
+                    bottom: 0 !important;
+                }
+            }
+        }
+        .swiperArrow {
+            padding: 0;
+        }
     }
-    .swiperArrow {
-        padding: 0;
+    .swiperBox {
+        .swiper-dots {
+            bottom: -30px;
+        }
     }
 }
 
@@ -226,5 +237,12 @@
     }
     .swiperArrow.prev {
         left: -15px;
+    }
+}
+
+.sliderFor {
+    .pagination {
+        display: flex;
+        justify-content: center;
     }
 }
