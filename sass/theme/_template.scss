@@ -116,6 +116,11 @@ footer {
     .container {
         padding: 30px 50px 15px;
     }
+    .footerBottom {
+        .container {
+            padding: 5px 50px;
+        }
+    }
 }
 
 // 整體共用container樣式，請注意首頁切版頁面的整齊

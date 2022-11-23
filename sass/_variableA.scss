@@ -22,7 +22,7 @@ $colorWordLight: #666;
 $colorBg: #b08968;
 $btnWordColor: #222; //按鈕字的顏色
 // 連結顏色
-$aColor: $colorSecondary;
+$aColor: darken($colorSecondary, 5);
 $aHover: mix($aColor, #000, 90%);
 $aFocus: mix($aColor, #fff, 90%);
 // 表單focus顏色
