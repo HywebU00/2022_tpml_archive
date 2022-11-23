@@ -1,6 +1,6 @@
 // -----  基本功能開關   ---------------------------------------------------
-topNav(); // 手機版顯示nav選單
-//navSticky(); // 捲動時固定主選單
+//topNav(); // 手機版顯示nav選單
+navSticky(); // 捲動時固定主選單
 //fatFooter(); // fatFooter是否要展開
 tabFunction('.tabSet'); // tab功能
 scrollTables('table'); // table捲動功能
@@ -20,53 +20,6 @@ accordionSlider({
         close: '收合', // 展開時顯示
     },
 });
-
-// 手風琴功能 進階查詢開合
-accordionSlider({
-    list: '.accordion2 .accordionList', // 問題區塊
-    content: '.accordion2 .accordionContent', // 回答區塊
-    autoSlider: false, // true 點選其他項目時會關閉已開啟的內容，false 需要再點一次才會關閉
-    info: {
-        open: '進階查詢', // 收合時顯示
-        close: '簡易查詢', // 展開時顯示
-    },
-});
-
-//// 手風琴功能 常見問題
-accordionSlider({
-    list: '.accordion3 .accordionList', // 問題區塊
-    content: '.accordion3 .accordionContent', // 回答區塊
-    autoSlider: false, // true 點選其他項目時會關閉已開啟的內容，false 需要再點一次才會關閉
-    info: {
-        open: '展開', // 收合時顯示
-        close: '收合', // 展開時顯示
-    },
-});
-
-//切換 lp list/grid
-(function() {
-    let lpStyle = document.querySelector('.lp');
-    let list = document.querySelector('.btnListArray');
-    let grid = document.querySelector('.btnGridArray');
-    if (list !== null || list !== null) {
-        list.addEventListener(
-            'click',
-            function() {
-                lpStyle.classList.add('lpList');
-                lpStyle.classList.remove('lpAlbum');
-            },
-            false
-        );
-        grid.addEventListener(
-            'click',
-            function() {
-                lpStyle.classList.add('lpAlbum');
-                lpStyle.classList.remove('lpList');
-            },
-            false
-        );
-    }
-})();
 
 //檢索後分類開關
 (function() {
