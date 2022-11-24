@@ -117,6 +117,12 @@ body {
             width: 50px;
         }
     }
+    small {
+        display: block;
+        font-weight: normal;
+        color: $colorWordLight;
+        margin-top: .25em;
+    }
 }
 
 ////////////////////////////////////////////////////////////
@@ -132,7 +138,7 @@ body {
         }
     }
     &>.container {
-        padding-top: 1em;
+        //padding-top: 1em;
         @include gutter(); //gutter 代表左右要留白
         &.twoCol {
             display: flex;
@@ -226,6 +232,7 @@ body {
 .arrayGrp {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 1em;
     select {
         flex: 0 1 auto;
         width: auto;

@@ -6648,6 +6648,12 @@ body.fixed {
     width: 50px;
   }
 }
+.heading2_2 small {
+  display: block;
+  font-weight: normal;
+  color: #666;
+  margin-top: 0.25em;
+}
 
 .innerPage {
   background: #fff;
@@ -6661,7 +6667,6 @@ body.fixed {
   width: 100%;
 }
 .innerPage > .container {
-  padding-top: 1em;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -6794,6 +6799,7 @@ body.fixed {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 1em;
 }
 .arrayGrp select {
   -webkit-box-flex: 0;
