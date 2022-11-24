@@ -7973,6 +7973,9 @@ h2.title {
   margin: 0.5em 0;
 }
 
+.cp {
+  margin-bottom: 2em;
+}
 .cp .pic {
   float: left;
   margin: 0px 1em 1em 0;
@@ -8001,6 +8004,14 @@ h2.title {
     margin: 0px auto;
     display: block;
     margin-bottom: 0.5em;
+  }
+}
+.cp .pic + ul, .cp .pic + ol {
+  list-style-position: inside;
+}
+@media screen and (max-width: 767px) {
+  .cp .pic + ul, .cp .pic + ol {
+    list-style-position: outside;
   }
 }
 .cp table {
@@ -8142,6 +8153,27 @@ h2.title {
 }
 .cp .infoList li .content a {
   text-decoration: underline;
+}
+.cp .imgContainer.fullImg {
+  margin-bottom: 1em;
+  overflow: hidden;
+  aspect-ratio: 3;
+  position: relative;
+}
+.cp .imgContainer.fullImg img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.cp .imgContainer.fullImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .fileDownload {
