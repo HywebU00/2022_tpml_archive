@@ -105,7 +105,8 @@ h1 {
         color: #fff;
         max-width: 45%;
         line-height: 1.5em;
-        &:hover {
+        &:hover,
+        &:focus {
             color: #fff;
         }
         @include screen('mobile') {

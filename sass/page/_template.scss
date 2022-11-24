@@ -139,6 +139,7 @@ body {
     }
     &>.container {
         //padding-top: 1em;
+        clear: both;
         @include gutter(); //gutter 代表左右要留白
         &.twoCol {
             display: flex;
