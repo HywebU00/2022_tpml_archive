@@ -8004,6 +8004,9 @@ h2.title {
     list-style-position: outside;
   }
 }
+.cp .topicContent {
+  clear: both;
+}
 .cp table {
   background: #fff;
 }
@@ -8036,6 +8039,7 @@ h2.title {
 .cp a {
   text-decoration: none;
   color: #582F32;
+  word-break: break-word;
 }
 .cp a:hover, .cp a:focus-visible {
   color: #4f2a2d;

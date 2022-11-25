@@ -55,6 +55,9 @@ h2.title {
             }
         }
     }
+    .topicContent {
+        clear: both;
+    }
     table {
         background: #fff;
     }
@@ -84,6 +87,7 @@ h2.title {
     }
     a {
         @include aSetting;
+        word-break: break-word;
     }
     .publishInfo {
         font-size: 0.875em;

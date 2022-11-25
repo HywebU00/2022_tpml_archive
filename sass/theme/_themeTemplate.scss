@@ -25,82 +25,15 @@ body {
 .mainMenu {
     background: $colorLight;
     &>ul {
-        margin: 0;
-        padding: 0 30px;
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        transition: .3s;
-        // 第一層選單樣式
         &>li {
             &>a {
-                display: block;
                 padding: .5em 2em;
-                font-weight: bold;
-                white-space: nowrap;
-                color: $colorWord;
-            }
-            &.hasChild {
-                &>a {
-                    &:after {
-                        content: '';
-                        width: 4px;
-                        height: 4px;
-                        display: inline-block;
-                        margin-left: 0.5em;
-                        vertical-align: middle;
-                        border: 2px solid lighten($colorWord, 40);
-                        transform: rotate(135deg);
-                        border-bottom: none;
-                        border-left: none;
-                        margin-bottom: 0.2em;
-                    }
-                }
-            }
-            &:hover {
-                &>a {
-                    color: $aHover;
-                    &:after {
-                        border: 2px solid $aHover;
-                        border-bottom: none;
-                        border-left: none;
-                    }
-                }
-            }
-            &.active {
-                &>a {
-                    color: $aHover;
-                    &:after {
-                        border: 2px solid $aHover;
-                        border-bottom: none;
-                        border-left: none;
-                    }
-                }
             }
         }
     }
     &.sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
         background: $colorLight;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        &:after {
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
         &>ul {
-            width: 100%;
-            max-width: $containerMax;
-            margin: 0 auto;
             justify-content: center;
         }
     }
@@ -117,6 +50,7 @@ footer {
         padding: 30px 50px 15px;
     }
     .footerBottom {
+        background: linear-gradient(180deg, $colorSecondary 31.25%, $colorPrimary 100%);
         .container {
             padding: 5px 50px;
         }
@@ -163,6 +97,9 @@ footer {
     .lpList {
         .thumbnail {
             flex-basis: calc(33.33333% - 1em);
+            @include screen('mobile') {
+                flex-basis: 100%;
+            }
             .imgContainer {
                 @include aspectRatio(3, 2);
             }
