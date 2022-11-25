@@ -109,6 +109,18 @@ accordionSlider({
             swiper: navSlider, //設定指向到哪個swiper，使用另一個設定的參數
         },
     });
+
+    var swiper = new Swiper('.gridSwiper', {
+        slidesPerView: 4,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 })();
 
 // 依照畫面尺寸調整h1位置

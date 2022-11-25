@@ -2572,6 +2572,7 @@ h1 img {
   overflow-y: auto !important;
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2597,12 +2598,13 @@ h1 img {
   top: 0;
   left: 0;
   height: 100%;
-  background: #000808;
+  background: #00484b;
   overflow: hidden;
   overflow-y: auto;
   z-index: 9999;
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -5229,8 +5231,8 @@ table.tableSprite tr:nth-child(even) {
   right: 0;
   bottom: 0;
   z-index: 1;
-  -webkit-box-shadow: 0px 0px 0px 1px #00565a inset;
-          box-shadow: 0px 0px 0px 1px #00565a inset;
+  -webkit-box-shadow: 0px 0px 0px 2px #00565a inset;
+          box-shadow: 0px 0px 0px 2px #00565a inset;
 }
 .thumbnail .imgContainer {
   overflow: hidden;
@@ -8634,10 +8636,6 @@ footer {
 footer .container {
   padding: 30px 50px 15px;
 }
-footer .footerBottom {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(31.25%, #11888c), to(#006064));
-  background: linear-gradient(180deg, #11888c 31.25%, #006064 100%);
-}
 footer .footerBottom .container {
   padding: 5px 50px;
 }
@@ -8743,6 +8741,8 @@ footer .footerBottom .container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.15) 2px 0px 5px -1px;
+          box-shadow: rgba(50, 50, 93, 0.15) 2px 0px 5px -1px;
 }
 @media screen and (max-width: 767px) {
   .mainMenu {
@@ -8807,4 +8807,8 @@ footer {
   footer {
     padding-left: 0;
   }
+}
+footer .footerBottom {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31.25%, #11888c), to(#006064));
+  background: linear-gradient(180deg, #11888c 31.25%, #006064 100%);
 }/*# sourceMappingURL=styleC.css.map */

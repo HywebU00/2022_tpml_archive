@@ -16,6 +16,7 @@
     overflow-y: auto;
     margin-left: -140px;
     align-items: flex-start;
+    box-shadow: rgba(50, 50, 93, 0.15) 2px 0px 5px -1px;
     @include screen('mobile') {
         margin-left: 0;
     }
@@ -68,5 +69,8 @@ footer {
     background-size: cover;
     @include screen('mobile') {
         padding-left: 0;
+    }
+    .footerBottom {
+        background: linear-gradient(180deg, $colorSecondary 31.25%, $colorPrimary 100%);
     }
 }

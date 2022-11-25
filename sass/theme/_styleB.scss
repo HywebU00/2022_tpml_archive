@@ -1,0 +1,85 @@
+.header {
+    >.container {
+        display: flex;
+    }
+}
+
+h1 {
+    flex: 1 0 auto;
+    width: auto;
+    background: transparent;
+    @include screen('mobile') {
+        background: #fff;
+    }
+    a {
+        position: static;
+        max-width: 100%;
+        background: transparent;
+        border-radius: 0;
+        color: $colorWord;
+        padding: 20px;
+    }
+}
+
+.header {
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    &:before {
+        background: transparent;
+        @include screen('mobile') {
+            background: $colorBg;
+        }
+    }
+}
+
+.mainMenu {
+    background: transparent;
+    &.sticky {
+        background: transparent;
+        position: relative;
+        box-shadow: none;
+        >ul {
+            justify-content: flex-end;
+        }
+    }
+    >ul {
+        >li {
+            >a {
+                padding: .5em 1.5em;
+            }
+        }
+    }
+}
+
+.main {
+    .themePic {
+        .container {
+            padding: 0;
+        }
+        .imgContainer {
+            @include aspectRatio(4, 1);
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.sectionBlock {
+    margin-top: 70px;
+}
+
+.gridSwiper {
+    &.swiper {
+        >.swiper-wrapper {
+            flex-direction: row;
+            padding-bottom: 40px;
+            .swiper-slide {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
