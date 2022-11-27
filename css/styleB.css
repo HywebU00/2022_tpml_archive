@@ -8812,13 +8812,39 @@ h1 a {
   margin-top: 70px;
 }
 
-.gridSwiper.swiper > .swiper-wrapper {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.gridSlider .swiperBox {
+  padding: 0 60px;
+}
+.gridSlider .swiperBox .swiper-dots {
+  bottom: -30px;
+}
+.gridSlider .swiperBox .lpAlbum {
+  margin: 0;
+}
+.gridSlider .swiperBox .thumbnail {
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.gridSlider .swiperBox .thumbnail:hover {
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cpLightbox {
+  display: none;
+  max-width: 90%;
+}
+@media screen and (max-width: 767px) {
+  .cpLightbox {
+    max-width: 100%;
+  }
+}
+
+.cp .picSlider {
+  width: 500px;
+  max-width: 100%;
   padding-bottom: 40px;
 }
-.gridSwiper.swiper > .swiper-wrapper .swiper-slide {
-  margin-top: 0 !important;
+.cp .picSlider .swiper-dots {
+  bottom: -30px;
 }/*# sourceMappingURL=styleB.css.map */

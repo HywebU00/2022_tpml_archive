@@ -50,6 +50,22 @@ accordionSlider({
 
 // 自行加入的JS請寫在這裡
 (function() {
+    const sliderSwiper = new Swiper('.picSlider .swiper', {
+        slidesPerView: 1,
+        loop: true,
+        // 切換點
+        pagination: {
+            el: '.picSlider .swiper-dots',
+            bulletElement: 'button',
+            clickable: true,
+        },
+        // 切換箭頭
+        navigation: {
+            nextEl: '.picSlider .swiperArrow.next', //自行設定樣式
+            prevEl: '.picSlider .swiperArrow.prev', //自行設定樣式
+            disabledClass: 'swiperArrow-disabled', //不可點選樣式
+        },
+    });
     //cp輪播
     const cpSwiper = new Swiper('.cpSlider .swiper', {
         slidesPerView: 4,
@@ -110,15 +126,31 @@ accordionSlider({
         },
     });
 
-    var swiper = new Swiper('.gridSwiper', {
-        slidesPerView: 4,
-        grid: {
-            rows: 2,
-        },
-        spaceBetween: 30,
+    // var swiper = new Swiper('.gridSwiper', {
+    //     slidesPerView: 1,
+    //     grid: {
+    //         rows: 2,
+    //     },
+    //     spaceBetween: 30,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    // });
+    const gridSlider = new Swiper('.gridSlider .swiper', {
+        slidesPerView: 1,
+        loop: false,
+        // 切換點
         pagination: {
-            el: ".swiper-pagination",
+            el: '.gridSlider .swiper-dots',
+            bulletElement: 'button',
             clickable: true,
+        },
+        // 切換箭頭
+        navigation: {
+            nextEl: '.gridSlider .swiperArrow.next', //自行設定樣式
+            prevEl: '.gridSlider .swiperArrow.prev', //自行設定樣式
+            disabledClass: 'swiperArrow-disabled', //不可點選樣式
         },
     });
 })();
