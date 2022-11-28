@@ -8747,6 +8747,9 @@ h1 a {
   color: #222;
   padding: 20px;
 }
+h1 a:hover {
+  color: #222;
+}
 
 .header {
   max-width: 100%;
@@ -8809,14 +8812,14 @@ h1 a {
 }
 
 .sectionBlock {
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .gridSlider .swiperBox {
-  padding: 0 60px;
+  padding: 0 60px 30px;
 }
 .gridSlider .swiperBox .swiper-dots {
-  bottom: -30px;
+  bottom: 0;
 }
 .gridSlider .swiperBox .lpAlbum {
   margin: 0;
