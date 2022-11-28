@@ -2,11 +2,11 @@
 // 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
 //---------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
-$colorPrimary: #9c6644; //主色
-$colorSecondary: #ffca3a; //輔色
-$colorLight: #ede0d4; //點綴
+$colorPrimary: #0f3f89; //主色
+$colorSecondary: #2968c7; //輔色
+$colorLight: #dbe7fb; //點綴
 //$colorLink: #00a4f9; //連結
-$colorImportant: #582F32; //重要
+$colorImportant: #153b73; //重要
 // 但注意真實顏色與語意的關聯必須易於辨識
 $colorBlue: #0066cc;
 $colorGreen: #298729;
@@ -19,10 +19,10 @@ $colorDark: #333333;
 $colorHr: #666; //hr顏色
 $colorWord: #222; //一般字的顏色
 $colorWordLight: #666;
-$colorBg: #b08968;
+$colorBg: #017bc4;
 $btnWordColor: #222; //按鈕字的顏色
 // 連結顏色
-$aColor: #6f1d1b;
+$aColor: $colorPrimary;
 $aHover: mix($aColor, #000, 90%);
 $aFocus: mix($aColor, #fff, 90%);
 // 表單focus顏色

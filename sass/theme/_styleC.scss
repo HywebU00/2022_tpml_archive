@@ -65,12 +65,9 @@
 
 footer {
     padding-left: 140px;
-    background-image: linear-gradient(180deg, $colorLight 0%, rgba(243, 239, 231, 0) 100%), url(../images/footer_bg.png);
+    //background-image: linear-gradient(180deg, $colorLight 0%, rgba(243, 239, 231, 0) 100%), url(../images/footer_bg.png);
     background-size: cover;
     @include screen('mobile') {
         padding-left: 0;
-    }
-    .footerBottom {
-        background: linear-gradient(180deg, $colorSecondary 31.25%, $colorPrimary 100%);
     }
 }
