@@ -5812,10 +5812,10 @@ div.function ul li a:focus-visible {
   }
   .pagination span {
     color: #714E39;
-    margin: 0px 0.5em;
+    margin: 0 0.5em;
   }
   .pagination .page {
-    margin: 10px auto;
+    margin: 0 0 0 5px;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5912,16 +5912,21 @@ div.function ul li a:focus-visible {
   }
   .pagination .total {
     padding: 0em;
-    display: inline-block;
-    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .pagination .total select {
-    margin: 0px 0.5em;
-  }
-  @media screen and (max-width: 767px) {
-    .pagination .total select {
-      margin: 0px;
-    }
+  .pagination .total select,
+.pagination .total input {
+    margin: 0.2em 0.5em;
   }
   .pagination .total .btn {
     min-width: auto;

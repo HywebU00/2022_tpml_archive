@@ -9,10 +9,10 @@
     }
     span {
         color: $colorPrimary;
-        margin: 0px 0.5em;
+        margin: 0 0.5em;
     }
     .page {
-        margin: 10px auto;
+        margin: 0 0 0 5px;
         padding: 0;
         display: flex;
         justify-content: center;
@@ -121,13 +121,16 @@
     }
     .total {
         padding: 0em;
-        display: inline-block;
-        vertical-align: middle;
-        select {
-            margin: 0px 0.5em;
-            @include screen('mobile') {
-                margin: 0px;
-            }
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        select,
+        input {
+            margin: 0.2em 0.5em;
+            // @include screen('mobile') {
+            //     margin: 0px;
+            // }
         }
         .btn {
             min-width: auto;
