@@ -766,6 +766,8 @@ th {
     color: #222;
     border-radius: 0.2em;
     text-shadow: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   .btn:hover {
     background: #c7c7c7;
@@ -856,15 +858,15 @@ th {
     border: solid 1px #714E39 !important;
   }
   .btnSecondary {
-    background: #fff !important;
+    background: #F8EFE5 !important;
     color: #3e2b1f !important;
     border: solid 1px #714E39 !important;
     text-shadow: none !important;
   }
   .btnSecondary:hover, .btnSecondary:focus-visible {
     color: #0b0806 !important;
-    background: #b5deff !important;
-    border: solid 1px #b5deff !important;
+    background: #e8caa9 !important;
+    border: solid 1px #e2be95 !important;
   }
   .btnNormal {
     background: #f1f1f1 !important;
@@ -8578,4 +8580,9 @@ h2.title {
   display: inline-block;
   margin: 0.3em 0.5em;
   min-width: 200px;
+}
+@media screen and (max-width: 767px) {
+  .collectionInfo .ebook a {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

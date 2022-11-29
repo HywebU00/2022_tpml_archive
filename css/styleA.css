@@ -833,6 +833,8 @@ kbd kbd {
   color: #222;
   border-radius: 0.2em;
   text-shadow: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .btn:hover {
   background: #c7c7c7;
@@ -928,15 +930,15 @@ kbd kbd {
 }
 
 .btnSecondary {
-  background: #fff !important;
+  background: #ede0d4 !important;
   color: #67432d !important;
   border: solid 1px #9c6644 !important;
   text-shadow: none !important;
 }
 .btnSecondary:hover, .btnSecondary:focus-visible {
   color: #312016 !important;
-  background: #b5deff !important;
-  border: solid 1px #b5deff !important;
+  background: #d6b99e !important;
+  border: solid 1px #cfac8c !important;
 }
 
 .btnNormal {
@@ -8585,6 +8587,11 @@ h2.title {
   display: inline-block;
   margin: 0.3em 0.5em;
   min-width: 200px;
+}
+@media screen and (max-width: 767px) {
+  .collectionInfo .ebook a {
+    display: block;
+  }
 }
 
 body.fixed {

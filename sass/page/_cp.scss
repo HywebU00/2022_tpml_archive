@@ -443,6 +443,9 @@ h2.title {
             display: inline-block;
             margin: .3em .5em;
             min-width: 200px;
+            @include screen('mobile') {
+                display: block;
+            }
         }
     }
 }
