@@ -339,7 +339,7 @@ th {
 }
 
 a:focus-visible {
-  outline: #7d3432 2px solid;
+  outline: #4f2a2d 2px solid;
 }
 @media screen and (max-width: 767px) {
   a:focus-visible {
@@ -419,7 +419,7 @@ a.goCenter:hover, a.goCenter:focus-visible {
   color: #9c6644;
 }
 .no-js noscript a:hover, .no-js noscript a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
 }
 .no-js .mpSlider .imgContainer {
   display: none;
@@ -618,10 +618,10 @@ body.largeSize {
 
 a {
   text-decoration: none;
-  color: #6f1d1b;
+  color: #582F32;
 }
 a:hover, a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 a:focus-visible {
@@ -701,7 +701,7 @@ kbd kbd {
   color: #333;
 }
 .fontSize ul li a:hover, .fontSize ul li a:focus, .fontSize ul li a.active {
-  background: #641a18;
+  background: #3e2123;
   color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -849,8 +849,8 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  -webkit-box-shadow: 0 0px 0px 2px #7d3432 !important;
-          box-shadow: 0 0px 0px 2px #7d3432 !important;
+  -webkit-box-shadow: 0 0px 0px 2px #4f2a2d !important;
+          box-shadow: 0 0px 0px 2px #4f2a2d !important;
 }
 .btn.active {
   background: #ededed;
@@ -880,8 +880,8 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  -webkit-box-shadow: 0 0px 0px 2px #7d3432 !important;
-          box-shadow: 0 0px 0px 2px #7d3432 !important;
+  -webkit-box-shadow: 0 0px 0px 2px #4f2a2d !important;
+          box-shadow: 0 0px 0px 2px #4f2a2d !important;
 }
 .btnSubmit.active {
   background: #b87f5b;
@@ -911,8 +911,8 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  -webkit-box-shadow: 0 0px 0px 2px #7d3432 !important;
-          box-shadow: 0 0px 0px 2px #7d3432 !important;
+  -webkit-box-shadow: 0 0px 0px 2px #4f2a2d !important;
+          box-shadow: 0 0px 0px 2px #4f2a2d !important;
 }
 .btnSearch.active {
   background: #b87f5b;
@@ -987,7 +987,7 @@ kbd kbd {
   background: #ffca3a;
 }
 .btnMoreLess:hover {
-  background: #641a18;
+  background: #3e2123;
   color: #fff;
 }
 
@@ -1071,7 +1071,7 @@ kbd kbd {
   color: #222;
 }
 .breadcrumb a:hover, .breadcrumb a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 .breadcrumb a:focus-visible {
@@ -1151,8 +1151,8 @@ img.loaded {
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-box-shadow: 0 0px 0px 2px #641a18 inset;
-          box-shadow: 0 0px 0px 2px #641a18 inset;
+  -webkit-box-shadow: 0 0px 0px 2px #3e2123 inset;
+          box-shadow: 0 0px 0px 2px #3e2123 inset;
 }
 .imgContainer .caption {
   position: absolute;
@@ -1925,10 +1925,10 @@ img.loaded {
 
 em[tooltip] {
   text-decoration: none;
-  color: #6f1d1b;
+  color: #582F32;
 }
 em[tooltip]:hover, em[tooltip]:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 em[tooltip]:focus-visible {
@@ -2205,7 +2205,7 @@ em[tooltip]:focus-visible {
   padding: 0.2em 0.75em;
 }
 .tag ul li a:hover, .tag ul li a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 .tag ul li a:focus-visible {
@@ -2474,18 +2474,18 @@ h1 img {
   margin-bottom: 0.2em;
 }
 .mainMenu > ul > li:hover > a {
-  color: #641a18;
+  color: #3e2123;
 }
 .mainMenu > ul > li:hover > a:after {
-  border: 2px solid #641a18;
+  border: 2px solid #3e2123;
   border-bottom: none;
   border-left: none;
 }
 .mainMenu > ul > li.active > a {
-  color: #641a18;
+  color: #3e2123;
 }
 .mainMenu > ul > li.active > a:after {
-  border: 2px solid #641a18;
+  border: 2px solid #3e2123;
   border-bottom: none;
   border-left: none;
 }
@@ -2519,7 +2519,7 @@ h1 img {
 }
 .mainMenu ul li ul li a:hover, .mainMenu ul li ul li a:focus-visible {
   color: #fff;
-  background: #641a18;
+  background: #3e2123;
 }
 .mainMenu ul li ul li.hasChild > ul {
   z-index: 999;
@@ -4642,8 +4642,8 @@ input[type=checkbox]:focus {
   cursor: pointer;
   color: #fff;
   outline: none;
-  -webkit-box-shadow: 0 0px 0px 2px #7d3432 !important;
-          box-shadow: 0 0px 0px 2px #7d3432 !important;
+  -webkit-box-shadow: 0 0px 0px 2px #4f2a2d !important;
+          box-shadow: 0 0px 0px 2px #4f2a2d !important;
 }
 .uploadGrp .uploadBtn.active {
   background: #ae724c;
@@ -4948,7 +4948,7 @@ table.tableSprite tr:nth-child(even) {
   color: #222;
 }
 .lp table td a:hover, .lp table td a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 .lp table td a:focus-visible {
@@ -4999,7 +4999,7 @@ table.tableSprite tr:nth-child(even) {
 }
 .lp .list > ul > li > a:hover,
 .lp .list ol > li > a:hover {
-  color: #641a18;
+  color: #3e2123;
 }
 .lp .list > ul > li > a .num,
 .lp .list ol > li > a .num {
@@ -5084,7 +5084,7 @@ table.tableSprite tr:nth-child(even) {
   color: #222;
 }
 .submenu li a:hover, .submenu li a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 .submenu li a:focus-visible {
@@ -5102,7 +5102,7 @@ table.tableSprite tr:nth-child(even) {
 }
 .submenu li a:hover, .submenu li a:focus-visible {
   background: #9c6644;
-  border: 1px solid #641a18;
+  border: 1px solid #3e2123;
   color: #fff;
 }
 
@@ -5146,7 +5146,7 @@ table.tableSprite tr:nth-child(even) {
   color: #fff;
 }
 .tabSet .tabItems .item:focus-visible {
-  outline: 2px #7d3432 solid;
+  outline: 2px #4f2a2d solid;
 }
 @media screen and (max-width: 767px) {
   .tabSet .tabItems .item:focus-visible {
@@ -5186,8 +5186,8 @@ table.tableSprite tr:nth-child(even) {
 }
 .tabSet .tabContent a:focus {
   outline: none;
-  -webkit-box-shadow: 0 0px 0px 2px #7d3432 inset;
-          box-shadow: 0 0px 0px 2px #7d3432 inset;
+  -webkit-box-shadow: 0 0px 0px 2px #4f2a2d inset;
+          box-shadow: 0 0px 0px 2px #4f2a2d inset;
 }
 @media screen and (max-width: 767px) {
   .tabSet .tabContent a:focus {
@@ -5217,7 +5217,7 @@ table.tableSprite tr:nth-child(even) {
   position: relative;
 }
 .thumbnail a:hover, .thumbnail a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 .thumbnail a:focus-visible {
@@ -5233,8 +5233,8 @@ table.tableSprite tr:nth-child(even) {
   right: 0;
   bottom: 0;
   z-index: 1;
-  -webkit-box-shadow: 0px 0px 0px 2px #641a18 inset;
-          box-shadow: 0px 0px 0px 2px #641a18 inset;
+  -webkit-box-shadow: 0px 0px 0px 2px #3e2123 inset;
+          box-shadow: 0px 0px 0px 2px #3e2123 inset;
 }
 .thumbnail .imgContainer {
   overflow: hidden;
@@ -5492,8 +5492,8 @@ div.function ul li a {
 div.function ul li button:hover, div.function ul li button:focus-visible,
 div.function ul li a:hover,
 div.function ul li a:focus-visible {
-  background: #641a18;
-  border-color: #641a18;
+  background: #3e2123;
+  border-color: #3e2123;
 }
 div.function ul li.icon_back a:before {
   background: url(../images/basic/icon_back.svg) no-repeat center center;
@@ -5562,7 +5562,7 @@ div.function ul li.icon_forward a:before {
   position: relative;
 }
 .functionPanel .function ul li a:hover, .functionPanel .function ul li a:focus-visible {
-  background: #641a18;
+  background: #3e2123;
   color: #fff;
 }
 .functionPanel .function ul li a:hover:before, .functionPanel .function ul li a:focus-visible:before {
@@ -5659,7 +5659,7 @@ div.function ul li.icon_forward a:before {
   background-size: 24px !important;
 }
 .functionPanel .share a.shareButton:hover, .functionPanel .share a.shareButton:focus-visible {
-  background: #641a18;
+  background: #3e2123;
 }
 .functionPanel .share a.shareButton:hover:before, .functionPanel .share a.shareButton:focus-visible:before {
   -webkit-filter: invert(100%);
@@ -6049,7 +6049,7 @@ div.function ul li.icon_forward a:before {
 }
 .accordion .accordionArrow:after {
   content: "";
-  border: 2px solid #6f1d1b;
+  border: 2px solid #582F32;
   border-top: none;
   border-left: none;
   position: absolute;
@@ -6096,7 +6096,7 @@ div.function ul li.icon_forward a:before {
   padding: 0.25em 0.5em;
 }
 .accordion1 .accordionContent li a:hover {
-  color: #641a18;
+  color: #3e2123;
 }
 .accordion1 .accordionContent .moreLessBtn {
   margin: 0 0 1em 0;
@@ -7218,7 +7218,7 @@ body.fixed {
 }
 
 a.more {
-  color: #6f1d1b;
+  color: #582F32;
   font-size: 1.125em;
   font-weight: bold;
   display: -webkit-box;
@@ -7242,7 +7242,7 @@ a.more:before {
   transition: 0.3s;
 }
 a.more:hover, a.more:focus, a.more.active {
-  color: #641a18;
+  color: #3e2123;
 }
 a.more:hover:before, a.more:focus:before, a.more.active:before {
   -webkit-transform: rotate(90deg);
@@ -7851,7 +7851,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   z-index: 1;
 }
 .exhibition_categories .cardGrp li a:hover .caption, .exhibition_categories .cardGrp li a:focus .caption {
-  color: #641a18;
+  color: #3e2123;
 }
 .exhibition_categories .cardGrp li .imgContainer {
   overflow: hidden;
@@ -8054,11 +8054,11 @@ h2.title {
 }
 .cp a {
   text-decoration: none;
-  color: #6f1d1b;
+  color: #582F32;
   word-break: break-word;
 }
 .cp a:hover, .cp a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 .cp a:focus-visible {
@@ -8221,274 +8221,37 @@ h2.title {
   border-bottom: solid 1px #eee;
 }
 .fileDownload li:before {
-  content: "·";
-  font-size: 2em;
-  font-weight: bold;
-  width: 1em;
-  height: 1em;
+  content: "";
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 0.42em;
-  left: 0.1em;
-  color: #666;
+  top: calc(50% - 10px);
+  left: 0;
+  background: url(../images/icon/icon_file_deep.svg) center no-repeat;
+  background-size: contain;
 }
 .fileDownload li .fileName {
   line-height: 1.8em;
   margin: 0.2em 0.5em 0.2em 0;
-  color: #222;
+}
+.fileDownload li .fileName:hover {
+  color: #3e2123;
+  text-decoration: underline;
 }
 .fileDownload li .fileName ~ span {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  margin: 0.2em;
-  font-size: 0.875em;
-  line-height: 1.5em;
-  vertical-align: middle;
-  color: #666;
-}
-.fileDownload li .fileName ~ span a {
-  color: #fff;
-  display: inline-block;
-  margin-right: 8px;
-}
-.fileDownload li span.file_doc a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_doc a:hover, .fileDownload li span.file_doc a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_docx a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_docx a:hover, .fileDownload li span.file_docx a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_odt a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_odt a:hover, .fileDownload li span.file_odt a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_xls a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_xls a:hover, .fileDownload li span.file_xls a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_xlsx a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_xlsx a:hover, .fileDownload li span.file_xlsx a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_csv a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_csv a:hover, .fileDownload li span.file_csv a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_ods a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_ods a:hover, .fileDownload li span.file_ods a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_ppt a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_ppt a:hover, .fileDownload li span.file_ppt a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_pptx a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_pptx a:hover, .fileDownload li span.file_pptx a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_odp a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_odp a:hover, .fileDownload li span.file_odp a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_zip a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_zip a:hover, .fileDownload li span.file_zip a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_txt a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_txt a:hover, .fileDownload li span.file_txt a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_mov a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_mov a:hover, .fileDownload li span.file_mov a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_mp3 a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_mp3 a:hover, .fileDownload li span.file_mp3 a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_jpg a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_jpg a:hover, .fileDownload li span.file_jpg a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_wmv a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_wmv a:hover, .fileDownload li span.file_wmv a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_mp4 a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_mp4 a:hover, .fileDownload li span.file_mp4 a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_pdf a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_pdf a:hover, .fileDownload li span.file_pdf a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span.file_other a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.2em 0.8em;
-  border-radius: 3px;
-}
-.fileDownload li span.file_other a:hover, .fileDownload li span.file_other a:focus-visible {
-  color: #fff;
-}
-.fileDownload li span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.fileDownload li span.file_doc a, .fileDownload li span.file_docx a, .fileDownload li span.file_odt a {
-  background: #275cb7;
-}
-.fileDownload li span.file_doc a:hover, .fileDownload li span.file_doc a:focus-visible, .fileDownload li span.file_docx a:hover, .fileDownload li span.file_docx a:focus-visible, .fileDownload li span.file_odt a:hover, .fileDownload li span.file_odt a:focus-visible {
-  background: #2351a2;
-}
-.fileDownload li span.file_xls a, .fileDownload li span.file_xlsx a, .fileDownload li span.file_csv a, .fileDownload li span.file_ods a {
-  background: #387947;
-}
-.fileDownload li span.file_xls a:hover, .fileDownload li span.file_xls a:focus-visible, .fileDownload li span.file_xlsx a:hover, .fileDownload li span.file_xlsx a:focus-visible, .fileDownload li span.file_csv a:hover, .fileDownload li span.file_csv a:focus-visible, .fileDownload li span.file_ods a:hover, .fileDownload li span.file_ods a:focus-visible {
-  background: #30683d;
-}
-.fileDownload li span.file_ppt a, .fileDownload li span.file_pptx a, .fileDownload li span.file_odp a, .fileDownload li span.file_pdf a {
-  background: #c55a3b;
-}
-.fileDownload li span.file_ppt a:hover, .fileDownload li span.file_ppt a:focus-visible, .fileDownload li span.file_pptx a:hover, .fileDownload li span.file_pptx a:focus-visible, .fileDownload li span.file_odp a:hover, .fileDownload li span.file_odp a:focus-visible, .fileDownload li span.file_pdf a:hover, .fileDownload li span.file_pdf a:focus-visible {
-  background: #b25135;
-}
-.fileDownload li span.file_pdf a {
-  background: #c00;
-}
-.fileDownload li span.file_pdf a:hover, .fileDownload li span.file_pdf a:focus-visible {
-  background: #b30000;
-}
-.fileDownload li span.file_zip a {
-  background: #eb712e;
-}
-.fileDownload li span.file_zip a:hover, .fileDownload li span.file_zip a:focus-visible {
-  background: #e96117;
-}
-.fileDownload li span.file_txt a, .fileDownload li span.file_other a {
-  background: #555;
-}
-.fileDownload li span.file_txt a:hover, .fileDownload li span.file_txt a:focus-visible, .fileDownload li span.file_other a:hover, .fileDownload li span.file_other a:focus-visible {
-  background: #484848;
-}
-.fileDownload li span.file_mov a {
-  background: #009999;
-}
-.fileDownload li span.file_mov a:hover, .fileDownload li span.file_mov a:focus-visible {
-  background: teal;
-}
-.fileDownload li span.file_mp3 a, .fileDownload li span.file_mp4 a {
-  background: #088ecc;
-}
-.fileDownload li span.file_mp3 a:hover, .fileDownload li span.file_mp3 a:focus-visible, .fileDownload li span.file_mp4 a:hover, .fileDownload li span.file_mp4 a:focus-visible {
-  background: #077db3;
-}
-.fileDownload li span.file_jpg a {
-  background: #6c29a4;
-}
-.fileDownload li span.file_jpg a:hover, .fileDownload li span.file_jpg a:focus-visible {
-  background: #5f2490;
-}
-.fileDownload li span.file_wmv a {
-  background: #430a1f;
-}
-.fileDownload li span.file_wmv a:hover, .fileDownload li span.file_wmv a:focus-visible {
-  background: #2d0715;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0.2em;
+  font-size: 0.875em;
+  line-height: 1.5em;
+  color: #666;
 }
 
 .webLink {
@@ -8530,7 +8293,7 @@ h2.title {
   color: #222;
 }
 .webLink li a:hover, .webLink li a:focus-visible {
-  color: #641a18;
+  color: #3e2123;
   cursor: pointer;
 }
 .webLink li a:focus-visible {
@@ -8732,7 +8495,7 @@ footer .footerBottom .container {
 }
 .cp .lpAlbum .thumbnail a:hover,
 .cp .lpList .thumbnail a:hover {
-  color: #641a18;
+  color: #3e2123;
 }
 .cp .lpAlbum .thumbnail .title,
 .cp .lpList .thumbnail .title {

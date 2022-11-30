@@ -23,8 +23,8 @@ $colorBg: #017bc4;
 $btnWordColor: #222; //按鈕字的顏色
 // 連結顏色
 $aColor: $colorPrimary;
-$aHover: mix($aColor, #000, 90%);
-$aFocus: mix($aColor, #fff, 90%);
+$aHover: mix($aColor, #000, 70%);
+$aFocus: mix($aColor, #000, 90%);
 // 表單focus顏色
 $formFocus: $colorPrimary; //表單
 $form-btn: $colorPrimary; //表單
