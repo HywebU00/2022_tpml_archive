@@ -115,6 +115,25 @@ footer {
             }
         }
     }
+    .cpSlider {
+        padding-top: 30px;
+        h3 {
+            text-align: left;
+        }
+    }
+    .heading3_1 {
+        position: relative;
+        padding-left: 70px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: calc(50% - 2px);
+            width: 60px;
+            height: 4px;
+            background: mix($colorPrimary, #fff, 30%);
+        }
+    }
 }
 
 .breadcrumb {

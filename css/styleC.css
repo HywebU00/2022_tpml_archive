@@ -8501,6 +8501,25 @@ footer .footerBottom .container {
 .cp .lpList .thumbnail .title {
   font-size: 1.25em;
 }
+.cp .cpSlider {
+  padding-top: 30px;
+}
+.cp .cpSlider h3 {
+  text-align: left;
+}
+.cp .heading3_1 {
+  position: relative;
+  padding-left: 70px;
+}
+.cp .heading3_1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 2px);
+  width: 60px;
+  height: 4px;
+  background: #b3cfd1;
+}
 
 .breadcrumb {
   border-bottom: 0;
