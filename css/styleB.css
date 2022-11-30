@@ -8739,6 +8739,25 @@ footer .footerBottom .container {
   font-size: 1.25em;
 }
 
+.breadcrumb {
+  border-bottom: 0;
+  font-size: 1rem;
+  padding-left: 10px;
+  position: relative;
+}
+.breadcrumb::before {
+  content: "";
+  width: 6px;
+  height: 14px;
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 0;
+  background-color: #2968c7;
+}
+.breadcrumb ul li {
+  margin: 0;
+}
+
 .header > .container {
   display: -webkit-box;
   display: -ms-flexbox;

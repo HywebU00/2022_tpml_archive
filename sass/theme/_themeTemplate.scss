@@ -116,3 +116,24 @@ footer {
         }
     }
 }
+
+.breadcrumb {
+    border-bottom: 0;
+    font-size: 1rem;
+    padding-left: 10px;
+    position: relative;
+    &::before {
+        content: "";
+        width: 6px;
+        height: 14px;
+        position: absolute;
+        top: calc(50% - 7px);
+        left: 0;
+        background-color: $colorSecondary;
+    }
+    ul {
+        li {
+            margin: 0;
+        }
+    }
+}
