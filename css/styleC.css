@@ -6033,8 +6033,6 @@ div.function ul li.icon_forward a:before {
 }
 .accordion .accordionContent {
   line-height: 1.45em;
-  -webkit-transition: height 0.3s linear;
-  transition: height 0.3s linear;
   overflow: hidden;
 }
 .accordion .accordionContent .content {
@@ -6182,6 +6180,10 @@ div.function ul li.icon_forward a:before {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+
+.accordionContent {
+  display: none;
 }
 
 .navTab .nav {
