@@ -822,7 +822,7 @@ function fontSize() {
 
   // --- 點擊文字大小按鈕
   el.forEach((i) => {
-    i.querySelectorAll('a').forEach((i) => {
+    i.querySelectorAll('a').forEach((v) => {
       // --- 移除 active 的 class 名稱
       function removeActiveClass() {
         const _parentEle = i.parentNode.parentNode;
@@ -880,7 +880,7 @@ function fontSize() {
   }
 
   // --- 初始化 字體大小設定
-  window.onload = (e) => {
+  window.addEventListener('load', (e) => {
     const _cookie = readCookie('FontSize');
     // --- 如果沒有_cookie 則預設值為'medium'
     if (_cookie == null) {
@@ -890,7 +890,7 @@ function fontSize() {
       i.click();
       e.preventDefault();
     });
-  };
+  });
 }
 // fontSize({
 //   name: document.querySelectorAll('.fontSize'), // 按鈕列表名稱
@@ -1442,6 +1442,7 @@ let lazyLoadInstance = new LazyLoad({
 // -----------------------------------------------------------------------
 // -----   Accordion設定   ------------------------------------------------
 // -----------------------------------------------------------------------
+
 function accordionSlider(obj) {
   const list = document.querySelectorAll(obj.list);
   let { autoSlider } = obj;
@@ -1485,6 +1486,7 @@ function accordionSlider(obj) {
   });
 
   function toggleAccordion(item) {
+    let fun = obj.fun;
     let content = item.parentElement.querySelector('.accordionContent');
     let display = window.getComputedStyle(content).display;
     item.parentElement.classList.add('active');
@@ -1492,6 +1494,7 @@ function accordionSlider(obj) {
     if (display === 'none') {
       display = 'block';
       content.style.display = display;
+      fun ? fun(duration) : '';
       let height = content.offsetHeight;
       content.style.height = 0;
       content.offsetHeight;
@@ -1542,7 +1545,6 @@ function accordionSlider(obj) {
     }
   }
 }
-
 // accordionSlider({
 //   list: '.accordionList', // 問題區塊
 //   content: '.accordionContent', // 回答區塊
@@ -1553,7 +1555,6 @@ function accordionSlider(obj) {
 //     close: '收合', // 展開時顯示
 //   },
 // });
-
 // -----------------------------------------------------------------------
 // -----   swiper 箭頭設定   ------------------------------------------------
 // -----------------------------------------------------------------------
