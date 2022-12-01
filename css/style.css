@@ -7463,6 +7463,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   padding: 1em 0;
   margin: 1em 0 0 0;
   border-top: 1px solid #666;
+  clear: both;
 }
 .searchBlock .btnSubmit {
   min-width: 300px;
