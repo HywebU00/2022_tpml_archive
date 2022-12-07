@@ -1012,6 +1012,23 @@ kbd kbd {
   margin-right: 3px;
 }
 
+.btnQuestion {
+  background: #11888c;
+  float: right;
+  margin: -50px 0.3em 0.3em;
+  padding: 0.5em 2em;
+}
+.btnQuestion:hover {
+  background: #00565a;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .btnQuestion {
+    float: none;
+    margin-top: 0;
+  }
+}
+
 .disabled,
 [disabled] {
   opacity: 0.5;
@@ -5783,6 +5800,7 @@ div.function ul li.icon_forward a:before {
   display: block;
   text-align: center;
   font-size: 0.938em;
+  clear: both;
 }
 .pagination .formInline {
   -webkit-box-pack: center;

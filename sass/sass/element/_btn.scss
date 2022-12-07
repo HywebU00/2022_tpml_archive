@@ -189,6 +189,22 @@
     }
 }
 
+//常見問題 我要發問
+.btnQuestion {
+    background: $colorSecondary;
+    float: right;
+    margin: -50px .3em .3em;
+    padding: .5em 2em;
+    &:hover {
+        background: $aHover;
+        color: #fff;
+    }
+    @include screen('mobile') {
+        float: none;
+        margin-top: 0;
+    }
+}
+
 .disabled,
 [disabled] {
     opacity: 0.5;

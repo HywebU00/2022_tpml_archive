@@ -933,6 +933,22 @@ th {
   .btnFunnel i {
     margin-right: 3px;
   }
+  .btnQuestion {
+    background: #FCA24F;
+    float: right;
+    margin: -50px 0.3em 0.3em;
+    padding: 0.5em 2em;
+  }
+  .btnQuestion:hover {
+    background: #4f2a2d;
+    color: #fff;
+  }
+  @media screen and (max-width: 767px) {
+    .btnQuestion {
+      float: none;
+      margin-top: 0;
+    }
+  }
   .disabled,
 [disabled] {
     opacity: 0.5;
@@ -5804,6 +5820,7 @@ div.function ul li a:focus-visible {
     display: block;
     text-align: center;
     font-size: 0.938em;
+    clear: both;
   }
   .pagination .formInline {
     -webkit-box-pack: center;
