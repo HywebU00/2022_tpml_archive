@@ -8541,6 +8541,20 @@ footer .footerBottom .container {
   height: 4px;
   background: #b7c5dc;
 }
+.cp .heading3_2 {
+  position: relative;
+  text-align: center;
+  margin: 1.5em 0;
+}
+.cp .heading3_2::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: -15px;
+  width: 60px;
+  height: 4px;
+  background: #b7c5dc;
+}
 
 .breadcrumb {
   border-bottom: 0;
@@ -8675,12 +8689,7 @@ h1 a:hover {
 
 .cpLightbox {
   display: none;
-  max-width: 90%;
-}
-@media screen and (max-width: 767px) {
-  .cpLightbox {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 
 .cp .picSlider {

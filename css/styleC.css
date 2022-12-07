@@ -8541,6 +8541,20 @@ footer .footerBottom .container {
   height: 4px;
   background: #b3cfd1;
 }
+.cp .heading3_2 {
+  position: relative;
+  text-align: center;
+  margin: 1.5em 0;
+}
+.cp .heading3_2::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: -15px;
+  width: 60px;
+  height: 4px;
+  background: #b3cfd1;
+}
 
 .breadcrumb {
   border-bottom: 0;

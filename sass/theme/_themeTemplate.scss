@@ -134,6 +134,20 @@ footer {
             background: mix($colorPrimary, #fff, 30%);
         }
     }
+    .heading3_2 {
+        position: relative;
+        text-align: center;
+        margin: 1.5em 0;
+        &::before {
+            content: "";
+            position: absolute;
+            left: calc(50% - 30px);
+            bottom: -15px;
+            width: 60px;
+            height: 4px;
+            background: mix($colorPrimary, #fff, 30%);
+        }
+    }
 }
 
 .breadcrumb {

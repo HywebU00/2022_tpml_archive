@@ -106,10 +106,10 @@ h1 {
 
 .cpLightbox {
     display: none;
-    max-width: 90%;
-    @include screen('mobile') {
-        max-width: 100%;
-    }
+    max-width: 100%;
+    // @include screen('mobile') {
+    //     max-width: 100%;
+    // }
 }
 
 .cp {
