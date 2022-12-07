@@ -6947,6 +6947,47 @@ body.fixed {
   max-width: 100%;
 }
 
+.noData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+}
+@media screen and (max-width: 767px) {
+  .noData {
+    padding: 30px 15px;
+  }
+}
+.noData img {
+  max-width: 40% !important;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+@media screen and (max-width: 991px) {
+  .noData img {
+    max-width: 90% !important;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+.noData p {
+  font-size: 2em;
+  color: #9c6644;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: center;
+}
+
 .hidden {
   display: none;
 }
@@ -7279,6 +7320,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   -webkit-backdrop-filter: blur(4.5px);
   border-radius: 6px;
   padding: 30px;
+  margin-bottom: 30px;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -7744,7 +7786,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 }
 
 .collection {
-  padding: 60px 0;
+  padding: 30px 0 60px;
 }
 @media screen and (max-width: 767px) {
   .collection {

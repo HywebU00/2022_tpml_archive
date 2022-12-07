@@ -83,6 +83,7 @@ a.more {
     -webkit-backdrop-filter: blur(4.5px);
     border-radius: 6px;
     padding: 30px;
+    margin-bottom: 30px;
     position: relative;
     @include screen('mobile') {
         padding: 30px 15px;
@@ -424,7 +425,7 @@ a.more {
 
 //典藏精華
 .collection {
-    padding: 60px 0;
+    padding: 30px 0 60px;
     @include screen('mobile') {
         padding-bottom: 30px;
     }

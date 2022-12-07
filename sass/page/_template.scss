@@ -336,6 +336,33 @@ body {
     }
 }
 
+//查無資料
+.noData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    @include screen('mobile') {
+        padding: 30px 15px;
+    }
+    img {
+        max-width: 40%!important;
+        flex: 0 0 40%;
+        @include screen('tablet') {
+            max-width: 90%!important;
+            flex: 1 1 100%;
+        }
+    }
+    p {
+        font-size: 2em;
+        color: $colorPrimary;
+        font-weight: bold;
+        line-height: 1.5em;
+        text-align: center;
+    }
+}
+
 .hidden {
     display: none;
 }
