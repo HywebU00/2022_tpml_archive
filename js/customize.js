@@ -110,6 +110,7 @@ function sideAccordion(duration) {
     if (list.length > 5) {
       moreBtn.addEventListener('click', secFun);
     }
+
     function secFun() {
       let ogHeight = 0 + parseInt(window.getComputedStyle(ulList).paddingTop) + parseInt(window.getComputedStyle(ulList).paddingBottom);
       list.forEach((v, i) => {
