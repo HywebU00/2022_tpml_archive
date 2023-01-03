@@ -7657,6 +7657,13 @@ h2.title {
     padding: 0;
   }
 }
+.collectionInfo .picSlider .sliderFor .imgContainer {
+  background: #333;
+}
+.collectionInfo .picSlider .sliderFor .imgContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .collectionInfo .picCaption {
   padding: 0 30px;
 }
