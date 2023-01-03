@@ -5555,9 +5555,11 @@ div.function ul li a:focus-visible {
     float: right;
     margin-bottom: 5px;
     position: relative;
+    font-size: 0rem;
   }
   .accordion2 .accordionBtn {
     padding-right: 25px;
+    font-size: 1rem;
   }
   .accordion2 .accordionArrow:after {
     right: 5px;
