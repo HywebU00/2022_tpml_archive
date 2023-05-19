@@ -1065,17 +1065,7 @@ img.lazy {
 }
 img.loaded {
   visibility: visible;
-  -webkit-animation: lazy_animation 0.5s ease-out;
-          animation: lazy_animation 0.5s ease-out;
-}
-
-@-webkit-keyframes lazy_animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: lazy_animation 0.5s ease-out;
 }
 
 @keyframes lazy_animation {
@@ -1123,7 +1113,7 @@ img.loaded {
   left: 0;
   bottom: 0;
   right: 0;
-  box-shadow: 0 0px 0px 2px #3e2123 inset;
+  box-shadow: 0 0px 0px 2px #4f2a2d inset;
 }
 .imgContainer .caption {
   position: absolute;
@@ -1910,7 +1900,6 @@ em[tooltip]:focus-visible {
   text-transform: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
   position: absolute;
@@ -2016,23 +2005,10 @@ em[tooltip]:focus-visible {
   transform: translate(0.5em, -50%);
 }
 
-@-webkit-keyframes tooltips-vert {
-  to {
-    opacity: 0.9;
-    transform: translate(-50%, 0);
-  }
-}
-
 @keyframes tooltips-vert {
   to {
     opacity: 0.9;
     transform: translate(-50%, 0);
-  }
-}
-@-webkit-keyframes tooltips-horz {
-  to {
-    opacity: 0.9;
-    transform: translate(0, -50%);
   }
 }
 @keyframes tooltips-horz {
@@ -2048,16 +2024,14 @@ em[tooltip]:focus-visible {
 [tooltip][flow^=up]:hover:after,
 [tooltip][flow^=down]:hover:before,
 [tooltip][flow^=down]:hover:after {
-  -webkit-animation: tooltips-vert 300ms ease-out forwards;
-          animation: tooltips-vert 300ms ease-out forwards;
+  animation: tooltips-vert 300ms ease-out forwards;
 }
 
 [tooltip][flow^=left]:hover:before,
 [tooltip][flow^=left]:hover:after,
 [tooltip][flow^=right]:hover:before,
 [tooltip][flow^=right]:hover:after {
-  -webkit-animation: tooltips-horz 300ms ease-out forwards;
-          animation: tooltips-horz 300ms ease-out forwards;
+  animation: tooltips-horz 300ms ease-out forwards;
 }
 
 .tooltip {
@@ -2313,15 +2287,6 @@ h1 img {
      object-fit: cover;
 }
 
-@-webkit-keyframes showMenu {
-  0% {
-    transform: translateX(30px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-
 @keyframes showMenu {
   0% {
     transform: translateX(30px);
@@ -2469,8 +2434,7 @@ h1 img {
 .mainMenu ul li ul ul {
   top: 0;
   left: 100%;
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
   font-size: 1em;
 }
 .mainMenu ul li.active > ul {
@@ -2478,8 +2442,7 @@ h1 img {
   display: block;
 }
 .mainMenu > ul > li.active > ul {
-  -webkit-animation: showMenu 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-          animation: showMenu 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  animation: showMenu 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 .mainMenu > ul > li.leftSlider ul ul {
   left: auto;
@@ -2641,8 +2604,7 @@ h1 img {
   transition-delay: -0.49s;
 }
 .sidebar .mobileArea .sideMainMenu ul {
-  -webkit-animation: showMenu 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-          animation: showMenu 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  animation: showMenu 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   padding: 0;
   left: 0;
 }
@@ -3234,9 +3196,9 @@ select::-ms-expand {
 }
 @media screen and (max-width: 575px) {
   .formContent .formGrp .formContent.formInline input[type=text],
-.formContent .formGrp .formContent.formInline input[type=tel],
-.formContent .formGrp .formContent.formInline select,
-.formContent .formGrp .formContent.formInline .checkbox {
+  .formContent .formGrp .formContent.formInline input[type=tel],
+  .formContent .formGrp .formContent.formInline select,
+  .formContent .formGrp .formContent.formInline .checkbox {
     width: calc(100% - 0.6em);
     display: block;
   }
@@ -3266,8 +3228,8 @@ select::-ms-expand {
 }
 @media screen and (max-width: 575px) {
   .formContent .tel input[type=text]:first-child ~ input,
-.formContent .tel select:first-child ~ input,
-.formContent .tel input[type=tel]:first-child ~ input {
+  .formContent .tel select:first-child ~ input,
+  .formContent .tel input[type=tel]:first-child ~ input {
     width: 100% !important;
     display: block !important;
   }
@@ -3905,10 +3867,10 @@ input[type=search] {
 }
 @media screen and (max-width: 767px) {
   .formGrp,
-.checkGrp,
-.radioGrp,
-.btnGrp,
-.uploadGrp {
+  .checkGrp,
+  .radioGrp,
+  .btnGrp,
+  .uploadGrp {
     flex-wrap: wrap;
   }
 }
@@ -3932,8 +3894,7 @@ input[type=search] {
   left: 0.35em;
   top: 0.3em;
   z-index: -1;
-  -webkit-animation: ripple 0.35s linear;
-          animation: ripple 0.35s linear;
+  animation: ripple 0.35s linear;
 }
 .checkGrp.formInline label,
 .radioGrp.formInline label {
@@ -4033,7 +3994,7 @@ legend {
 }
 @media screen and (max-width: 575px) {
   label,
-legend {
+  legend {
     display: block;
   }
 }
@@ -4085,8 +4046,8 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   input,
-select,
-textarea {
+  select,
+  textarea {
     width: 100%;
   }
 }
@@ -4402,10 +4363,10 @@ table.tableSprite tr:nth-child(even) {
     background-color: transparent !important;
   }
   .tableList thead,
-.tableList tbody,
-.tableList th,
-.tableList td,
-.tableList tr {
+  .tableList tbody,
+  .tableList th,
+  .tableList td,
+  .tableList tr {
     display: block;
   }
   .tableList thead tr {
@@ -4468,7 +4429,7 @@ table.tableSprite tr:nth-child(even) {
 }
 @media screen and (max-width: 767px) {
   .fixThTable th,
-.fixThTable td {
+  .fixThTable td {
     display: inline-block;
     margin-right: -6px;
     margin-left: 0;
@@ -4651,7 +4612,7 @@ table.tableSprite tr:nth-child(even) {
 }
 @media screen and (max-width: 767px) {
   .lp .list > ul > li span.dept,
-.lp .list ol > li span.dept {
+  .lp .list ol > li span.dept {
     display: block;
   }
 }
@@ -4834,7 +4795,7 @@ table.tableSprite tr:nth-child(even) {
   right: 0;
   bottom: 0;
   z-index: 1;
-  box-shadow: 0px 0px 0px 2px #3e2123 inset;
+  box-shadow: 0px 0px 0px 2px #4f2a2d inset;
 }
 .thumbnail .imgContainer {
   overflow: hidden;
@@ -4914,8 +4875,7 @@ table.tableSprite tr:nth-child(even) {
   box-sizing: border-box;
   border-radius: 8px;
   box-shadow: 1px 1px 15px RGBA(0, 0, 0, 0.5);
-  -webkit-animation: scaleUp 0.5s ease-out;
-          animation: scaleUp 0.5s ease-out;
+  animation: scaleUp 0.5s ease-out;
 }
 .modal h2 {
   border-bottom: 1px solid #9c6644;
@@ -4936,17 +4896,6 @@ table.tableSprite tr:nth-child(even) {
 }
 .modal .close:hover, .modal .close:focus-visible {
   cursor: pointer;
-}
-
-@-webkit-keyframes scaleUp {
-  0% {
-    transform: scale(1) translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1) translateY(0px);
-    opacity: 1;
-  }
 }
 
 @keyframes scaleUp {
@@ -5735,15 +5684,15 @@ div.function ul li.icon_forward a:before {
 
 @media print {
   .main,
-.content, body {
+  .content, body {
     background: none;
   }
   /* -------------------------------不需要列印的區塊，請放置於這----//*/
   header,
-.fatFooter,
-footer,
-.accessKey,
-.submenu {
+  .fatFooter,
+  footer,
+  .accessKey,
+  .submenu {
     display: none;
   }
   /* -------------------------------各別顯示設定----//*/
@@ -5784,7 +5733,7 @@ footer,
     width: 260px !important;
   }
   .main,
-.content {
+  .content {
     position: relative;
     min-height: 1px;
     padding-left: 0;
@@ -5799,33 +5748,33 @@ footer,
     padding-top: 0px !important;
   }
   .main:before, .main:after,
-.content:before,
-.content:after {
+  .content:before,
+  .content:after {
     content: "";
     display: table;
   }
   .main:after,
-.content:after {
+  .content:after {
     clear: both;
   }
   .main img.floatLeft,
-.content img.floatLeft {
+  .content img.floatLeft {
     float: right;
     max-width: 50%;
     margin: 0px 1em 1em 0;
   }
   .main img.floatRight,
-.content img.floatRight {
+  .content img.floatRight {
     float: right;
     max-width: 50%;
     margin: 0px 0 1em 1em;
   }
   .main a:link,
-.main a:visited,
-.main a,
-.content a:link,
-.content a:visited,
-.content a {
+  .main a:visited,
+  .main a,
+  .content a:link,
+  .content a:visited,
+  .content a {
     background: transparent;
     color: #222;
     font-weight: bold;
@@ -5834,28 +5783,28 @@ footer,
     word-wrap: break-word;
   }
   .main p a,
-.content p a {
+  .content p a {
     word-wrap: break-word;
   }
   .main p a[href^=http]:after,
-.content p a[href^=http]:after {
+  .content p a[href^=http]:after {
     content: " (" attr(href) ")";
     font-size: 90%;
   }
   .main p a[href^="#"]:after,
-.content p a[href^="#"]:after {
+  .content p a[href^="#"]:after {
     display: none;
   }
   .main abbr[title]:after,
-.content abbr[title]:after {
+  .content abbr[title]:after {
     content: " (" attr(title) ")";
   }
   .main table,
-.content table {
+  .content table {
     background: #fff;
   }
   .main li,
-.content li {
+  .content li {
     content: "» ";
   }
   /* 檔案下載*/
@@ -5865,20 +5814,20 @@ footer,
     width: 100% !important;
   }
   .fileDownload .update,
-.fileDownload .fileView {
+  .fileDownload .fileView {
     float: none !important;
     width: 30% !important;
     display: inline-block !important;
     margin-left: 3em;
   }
   *,
-*:before,
-*:after,
-*:first-letter,
-p:first-line,
-div:first-line,
-blockquote:first-line,
-li:first-line {
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
@@ -6705,7 +6654,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 .searchBlock {
   background: rgb(255, 255, 255);
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.5019607843) 0%, rgba(248, 248, 248, 0.8) 32%, rgba(245, 245, 245, 0.11) 100%);
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 2px 4px rgba(0, 0, 0, 0.07);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
@@ -6811,11 +6760,17 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 }
 @media screen and (max-width: 767px) {
   .searchBlock .flexForm input[type=text],
-.searchBlock .flexForm select {
+  .searchBlock .flexForm select {
     max-width: 100%;
     flex-basis: 100%;
     margin: 0 0 5px 0;
   }
+}
+.searchBlock .flexForm input[type=text]:focus-visible,
+.searchBlock .flexForm select:focus-visible {
+  border: 1px solid #c79b7f;
+  box-shadow: 0px 0px 0px 2px #c79b7f;
+  outline: none;
 }
 .searchBlock .flexForm .formTitle {
   font-weight: bold;
@@ -6873,12 +6828,12 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 .searchBlock .keywordHot ul li a {
   display: block;
   padding: 0.2em 1em;
-  background: linear-gradient(180deg, #714E39 31.25%, #582F32 100%);
+  background: linear-gradient(180deg, #714e39 31.25%, #582f32 100%);
   color: #fff;
   transition: 0.2s;
 }
 .searchBlock .keywordHot ul li a:hover, .searchBlock .keywordHot ul li a:focus {
-  background: linear-gradient(180deg, #582F32 31.25%, #582F32 100%);
+  background: linear-gradient(180deg, #582f32 31.25%, #582f32 100%);
 }
 .searchBlock .keywordHot ul li a:focus {
   outline: 2px solid #ffca3a;
@@ -6893,7 +6848,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 .searchBlock .btnSubmit {
   min-width: 300px;
   margin: 1em auto 0.5em;
-  background: linear-gradient(180deg, #F8EFE5 11.98%, #EFE2D4 100%);
+  background: linear-gradient(180deg, #f8efe5 11.98%, #efe2d4 100%);
   color: #333333;
   border: none;
   font-size: 1.125rem;
@@ -6908,7 +6863,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   }
 }
 .searchBlock .btnSubmit:hover {
-  background: linear-gradient(180deg, #714E39 31.25%, #582F32 100%);
+  background: linear-gradient(180deg, #714e39 31.25%, #582f32 100%);
   color: #fff;
 }
 
@@ -6916,7 +6871,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 0.2em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px 2px 4px rgba(0, 0, 0, 0.07);
   margin-bottom: 1.5em;
@@ -7027,7 +6982,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   flex-basis: calc(40% - 30px);
   max-width: calc(40% - 30px);
   background: rgba(237, 224, 212, 0.6);
-  border: 0.7px solid #FFFFFF;
+  border: 0.7px solid #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(0, 0, 0, 0.07);
   border-radius: 6px;
   line-height: 1.8em;
@@ -7071,7 +7026,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 }
 @media screen and (max-width: 1399px) {
   .mpSlider .captionCard .subject .bigWord,
-.mpSlider .captionCard .creator .bigWord {
+  .mpSlider .captionCard .creator .bigWord {
     display: block;
     white-space: nowrap;
     -webkit-line-clamp: 1;
@@ -7152,7 +7107,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
 .exhibition_categories {
   position: relative;
   padding: 60px 0;
-  background: linear-gradient(180deg, #240503 25%, #5A2C02 45%, #AF796E 90%);
+  background: linear-gradient(180deg, #240503 25%, #5a2c02 45%, #af796e 90%);
 }
 @media screen and (max-width: 767px) {
   .exhibition_categories {
@@ -7283,7 +7238,7 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   color: #222;
 }
 .exhibition_categories .tabSet .tabItems .item:hover {
-  background: linear-gradient(180deg, #714E39 31.25%, #582F32 100%);
+  background: linear-gradient(180deg, #714e39 31.25%, #582f32 100%);
   color: #fff;
 }
 .exhibition_categories .categoriesGrp ul {
@@ -7322,12 +7277,14 @@ a.more:hover:before, a.more:focus:before, a.more.active:before {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   transition: 0.2s;
 }
-.exhibition_categories .categoriesGrp li a:hover {
+.exhibition_categories .categoriesGrp li a:hover, .exhibition_categories .categoriesGrp li a:focus-visible {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-3px);
+  background: linear-gradient(180deg, rgba(237, 224, 212, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
 }
-.exhibition_categories .categoriesGrp li a:focus {
-  outline: 2px solid #ffca3a;
+.exhibition_categories .categoriesGrp li a:focus-visible {
+  outline: 2px solid #582F32;
+  background: linear-gradient(180deg, rgba(237, 224, 212, 0.8) 0%, rgba(255, 255, 255, 0.9) 100%);
 }
 
 h1.title,
@@ -7795,7 +7752,7 @@ footer .footerBottom .container {
 }
 @media screen and (max-width: 767px) {
   .cp .lpAlbum .thumbnail,
-.cp .lpList .thumbnail {
+  .cp .lpList .thumbnail {
     flex-basis: 100%;
   }
 }
